@@ -4,7 +4,9 @@
   "description": "50 Facebook ad variations for The Ivy Bee premium botanical hair care, targeting women aged 28-60.",
   "private": true,
   "scripts": {
-    "build": "node scripts/build.js"
+    "build": "node scripts/build.js",
+    "posters": "node scripts/build-posters.js",
+    "samples": "node scripts/samples.js"
   },
   "optionalDependencies": {
     "sharp": "^0.33.0"

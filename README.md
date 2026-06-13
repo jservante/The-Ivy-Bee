@@ -35,6 +35,24 @@ Each ad includes the fields Facebook asks for:
 - **Full gallery:** open `index.html` in any browser to see all 50 creatives
   laid out with their copy.
 
+## Retro poster set (new)
+
+A second, bolder art direction in the **Forest** colourway lives in `posters/`:
+
+- `posters/ad-NN.png` / `.svg` — 50 retro pop-art posters (halftone field, big
+  hero word, sunburst image slot, starburst badge, banner).
+- `posters/index.html` — gallery of all 50.
+- Each poster drops the amber **product render** (`assets/product-shot.jpg`) into
+  the circular slot as a fallback. **To use your own photo or AI artwork**, place
+  a square image at `images/ad-NN.jpg` (or `.png`) and re-run `npm run posters`.
+- Built by `scripts/build-posters.js` from `scripts/retro-template.js`. Retro
+  hooks per ad live in the `HOOKS` map in `build-posters.js`; the long-form
+  Facebook copy still comes from `data/ads.json`.
+
+```bash
+npm run posters    # rebuild the 50 retro posters
+```
+
 ## Campaign themes
 
 1. **Damage Repair & Restore** — rebuild strength, fix split ends, first-wash results
