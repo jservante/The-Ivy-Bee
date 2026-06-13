@@ -114,7 +114,7 @@ const html = `<!DOCTYPE html>
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>${esc(brand)} — Facebook Ads (${ads.length})</title>
+  <title>${esc(brand)} - Facebook Ads (${ads.length})</title>
   <style>
     :root {
       --green: #1c4332;
@@ -168,7 +168,7 @@ const html = `<!DOCTYPE html>
 ${sections}
   </main>
   <footer class="page">
-    Generated from <code>data/ads.json</code> &middot; The Ivy Bee — premium botanical hair care.
+    Generated from <code>data/ads.json</code> &middot; The Ivy Bee - premium botanical hair care.
   </footer>
 </body>
 </html>

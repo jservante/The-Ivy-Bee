@@ -1,4 +1,4 @@
-# The Ivy Bee — Facebook Ads
+# The Ivy Bee - Facebook Ads
 
 50 ready-to-run Facebook ad variations for **The Ivy Bee**, a premium botanical
 hair care range (Shampoo & Restore, Conditioner, and Hair Treatment) bottled in
@@ -23,21 +23,21 @@ recyclable amber glass.
 
 Each ad includes the fields Facebook asks for:
 
-- **Primary text** — the body copy that sits above the image in feed
-- **Headline** — the bold line baked into the creative
-- **Description** — the supporting line
-- **Call to action** — the button (Shop Now / Learn More / Get Offer)
+- **Primary text** - the body copy that sits above the image in feed
+- **Headline** - the bold line baked into the creative
+- **Description** - the supporting line
+- **Call to action** - the button (Shop Now / Learn More / Get Offer)
 
 ## Viewing the ads
 
-- **On your phone:** browse `creatives/` on GitHub — it previews the `.png` files
+- **On your phone:** browse `creatives/` on GitHub - it previews the `.png` files
   inline, no download needed.
 - **Full gallery:** open `index.html` in any browser to see all 50 creatives
   laid out with their copy.
 
 ## Fonts
 
-Premium typefaces (Playfair Display, Cormorant Garamond, Jost — all OFL) are
+Premium typefaces (Playfair Display, Cormorant Garamond, Jost - all OFL) are
 bundled in `fonts/`. In a fresh environment, register them once before
 rendering so the SVG output uses them instead of a generic serif:
 
@@ -49,9 +49,9 @@ bash scripts/setup-fonts.sh
 
 A second, bolder art direction in the **Forest** colourway lives in `posters/`:
 
-- `posters/ad-NN.png` / `.svg` — 50 retro pop-art posters (halftone field, big
+- `posters/ad-NN.png` / `.svg` - 50 retro pop-art posters (halftone field, big
   hero word, sunburst image slot, starburst badge, banner).
-- `posters/index.html` — gallery of all 50.
+- `posters/index.html` - gallery of all 50.
 - Each poster drops the amber **product render** (`assets/product-shot.jpg`) into
   the circular slot as a fallback. **To use your own photo or AI artwork**, place
   a square image at `images/ad-NN.jpg` (or `.png`) and re-run `npm run posters`.
@@ -65,16 +65,16 @@ npm run posters    # rebuild the 50 retro posters
 
 ## Campaign themes
 
-1. **Damage Repair & Restore** — rebuild strength, fix split ends, first-wash results
-2. **Clean & Natural Ingredients** — sulphate / paraben / silicone-free, botanical
-3. **Luxury Self-Care Ritual** — turn wash day into a treat
-4. **Age Confidence (28-60)** — hair that changes with hormones, colour and time
-5. **Social Proof & Reviews** — testimonial and "everyone's switching" angles
-6. **Brand & Founder Story** — why The Ivy Bee exists
-7. **New Launch & Intro Offer** — just launched, try the trio, first-order offer
-8. **Sustainability & Eco** — recyclable amber glass, cruelty-free
-9. **Scent & Sensory** — the fragrance and the experience
-10. **Salon Quality & Value** — salon results at home, smart price
+1. **Damage Repair & Restore** - rebuild strength, fix split ends, first-wash results
+2. **Clean & Natural Ingredients** - sulphate / paraben / silicone-free, botanical
+3. **Luxury Self-Care Ritual** - turn wash day into a treat
+4. **Age Confidence (28-60)** - hair that changes with hormones, colour and time
+5. **Social Proof & Reviews** - testimonial and "everyone's switching" angles
+6. **Brand & Founder Story** - why The Ivy Bee exists
+7. **New Launch & Intro Offer** - just launched, try the trio, first-order offer
+8. **Sustainability & Eco** - recyclable amber glass, cruelty-free
+9. **Scent & Sensory** - the fragrance and the experience
+10. **Salon Quality & Value** - salon results at home, smart price
 
 Each theme has its own colour treatment so the angles look visually distinct.
 
@@ -86,7 +86,7 @@ npm run build      # rebuilds creatives, facebook-ads.csv and index.html
 ```
 
 Edit copy in `data/ads.json` and re-run the build; the CSV, graphics and gallery
-all stay in sync. PNG export is optional — if `sharp` isn't installed the build
+all stay in sync. PNG export is optional - if `sharp` isn't installed the build
 still produces the SVGs and gallery, just skips the PNGs.
 
 ## Notes for launch

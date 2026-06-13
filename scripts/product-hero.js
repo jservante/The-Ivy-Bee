@@ -39,12 +39,12 @@ function productHero(imgFile) {
   <image href="${href}" x="0" y="-100" width="${W}" height="${W}" preserveAspectRatio="xMidYMid slice" clip-path="url(#ph)"/>
   <rect x="0" y="${photoH}" width="${W}" height="6" fill="${C.gold}"/>
   ${stars(540, P + 62, C.goldlt)}
-  <text x="540" y="${P + 100}" text-anchor="middle" font-family="${SANS}" font-size="22" letter-spacing="3" fill="${C.goldlt}">LOVED BY IVY BEE REGULARS</text>
-  <text x="540" y="${P + 182}" text-anchor="middle" font-family="${SERIF}" font-size="62" fill="${C.cream}">Cleaner ingredients.</text>
-  <text x="540" y="${P + 252}" text-anchor="middle" font-family="${SERIF}" font-size="62" fill="${C.cream}">Better hair days.</text>
+  <text x="540" y="${P + 100}" text-anchor="middle" font-family="${SANS}" font-size="22" letter-spacing="3" fill="${C.goldlt}">LOVED BY CUSTOMERS LIKE YOU</text>
+  <text x="540" y="${P + 182}" text-anchor="middle" font-family="${SERIF}" font-size="62" fill="${C.cream}">Your best hair days</text>
+  <text x="540" y="${P + 252}" text-anchor="middle" font-family="${SERIF}" font-size="62" fill="${C.cream}">start here.</text>
   <text x="540" y="${P + 320}" text-anchor="middle" font-family="${SERIF}" font-style="italic" font-size="36" fill="${C.gold}">Drawn from nature, made for your hair.</text>
   <rect x="350" y="${P + 366}" width="380" height="78" rx="39" fill="${C.gold}"/>
-  <text x="540" y="${P + 417}" text-anchor="middle" font-family="${SANS}" font-weight="bold" font-size="28" letter-spacing="3" fill="${C.ink}">SHOP THE RITUAL</text>
+  <text x="540" y="${P + 417}" text-anchor="middle" font-family="${SANS}" font-weight="bold" font-size="28" letter-spacing="3" fill="${C.ink}">TREAT YOUR HAIR</text>
   <text x="540" y="${P + 500}" text-anchor="middle" font-family="${SERIF}" font-style="italic" font-size="38" fill="${C.gold}">The Ivy Bee</text>
 </svg>`;
 }

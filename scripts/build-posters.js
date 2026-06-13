@@ -76,13 +76,13 @@ function imageHrefFor(id) {
   }
 
   const html = `<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>The Ivy Bee — Retro Posters</title><style>
+<title>The Ivy Bee - Retro Posters</title><style>
 body{margin:0;font-family:Segoe UI,Arial,sans-serif;background:#14352a;color:#f3e7c6}
 header{padding:36px 20px;text-align:center}h1{margin:0;font-size:2rem;letter-spacing:1px}
 p{opacity:.85}main{max-width:1240px;margin:0 auto;padding:20px 16px 70px;display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px}
 figure{margin:0;background:#0f2a20;border-radius:12px;overflow:hidden;border:1px solid #2c5443}
 img{width:100%;display:block}figcaption{padding:10px 12px;font-size:.82rem;color:#e2bd63}figcaption span{color:#cfc3a0}
-</style></head><body><header><h1>The Ivy Bee — Retro Posters</h1>
+</style></head><body><header><h1>The Ivy Bee - Retro Posters</h1>
 <p>${data.ads.length} ads · Forest colourway · product render in slot (drop your own photo/AI art in <code>images/ad-NN.jpg</code>)</p></header>
 <main>${cards.join("\n")}</main></body></html>`;
   fs.writeFileSync(path.join(outDir, "index.html"), html);
