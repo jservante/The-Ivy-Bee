@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" width="1080" height="1350"><rect width="1080" height="1350" fill="#10261d"/><g transform="translate(540 470) scale(2.7)" fill="none" stroke="#e2bd63" stroke-linecap="round">
+    <circle r="40" stroke-width="3.75"/><circle r="33" stroke-width="1.75"/>
+    <ellipse cx="-11" cy="-6" rx="12" ry="6.5" stroke-width="2" transform="rotate(-26 -11 -6)"/>
+    <ellipse cx="11" cy="-6" rx="12" ry="6.5" stroke-width="2" transform="rotate(26 11 -6)"/>
+    <ellipse cx="0" cy="4" rx="6.5" ry="12" stroke-width="2.25"/>
+    <circle cx="0" cy="-10" r="3.4" stroke-width="2"/>
+    <line x1="-6" y1="2" x2="6" y2="2" stroke-width="1.5"/><line x1="-5" y1="8" x2="5" y2="8" stroke-width="1.5"/>
+  </g><text x="540" y="900" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-weight="900" font-size="150" letter-spacing="-2" fill="#f3e7c6">Just</text>
+     <text x="540" y="1050" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-weight="900" font-size="150" letter-spacing="-2" fill="#f3e7c6">Wash It.</text>
+     <text x="540" y="1230" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="38" fill="#e2bd63">The Ivy Bee · Botanical Hair Care</text></svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" width="1080" height="1350"><rect width="1080" height="1350" fill="#0c0c0c"/><g transform="translate(540 360) scale(1.7)" fill="none" stroke="#f3f0e8" stroke-linecap="round">
+    <circle r="40" stroke-width="3.5999999999999996"/><circle r="33" stroke-width="1.68"/>
+    <ellipse cx="-11" cy="-6" rx="12" ry="6.5" stroke-width="1.92" transform="rotate(-26 -11 -6)"/>
+    <ellipse cx="11" cy="-6" rx="12" ry="6.5" stroke-width="1.92" transform="rotate(26 11 -6)"/>
+    <ellipse cx="0" cy="4" rx="6.5" ry="12" stroke-width="2.16"/>
+    <circle cx="0" cy="-10" r="3.4" stroke-width="1.92"/>
+    <line x1="-6" y1="2" x2="6" y2="2" stroke-width="1.44"/><line x1="-5" y1="8" x2="5" y2="8" stroke-width="1.44"/>
+  </g><text x="540" y="720" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="118" fill="#f3f0e8">Think</text>
+     <text x="540" y="850" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="118" fill="#f3f0e8">Botanical.</text><text x="540" y="1230" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="40" fill="#8f8a7e">The Ivy Bee</text></svg>
