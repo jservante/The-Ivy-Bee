@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Ivy Bee — Facebook Ads (50)</title>
+  <style>
+    :root {
+      --green: #1c4332;
+      --green-soft: #2d5a45;
+      --gold: #c19a3b;
+      --gold-soft: #d9b45f;
+      --cream: #f7f3ea;
+      --ink: #2a2a26;
+      --line: #e4ddcd;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--cream);
+      line-height: 1.5;
+    }
+    header.page {
+      background: var(--green);
+      color: #fff;
+      padding: 48px 24px 40px;
+      text-align: center;
+    }
+    header.page h1 {
+      margin: 0 0 8px;
+      font-size: 2.4rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+    header.page h1 .bee { color: var(--gold-soft); }
+    header.page p { margin: 4px auto; max-width: 640px; opacity: 0.9; }
+    header.page .tags { margin-top: 16px; }
+    header.page .tag {
+      display: inline-block;
+      border: 1px solid var(--gold-soft);
+      color: var(--gold-soft);
+      border-radius: 999px;
+      padding: 4px 14px;
+      margin: 4px;
+      font-size: 0.85rem;
+    }
+    main { max-width: 1180px; margin: 0 auto; padding: 32px 20px 80px; }
+    .campaign { margin-top: 40px; }
+    .campaign__title {
+      font-size: 1.35rem;
+      color: var(--green);
+      border-bottom: 2px solid var(--gold);
+      padding-bottom: 8px;
+      margin-bottom: 20px;
+    }
+    .campaign__title span { color: var(--gold); font-size: 0.9rem; font-weight: 400; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 22px;
+    }
+    .ad {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 2px 10px rgba(28, 67, 50, 0.06);
+    }
+    .ad__img {
+      height: 150px;
+      background: linear-gradient(135deg, var(--cream), #efe7d4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 1px solid var(--line);
+    }
+    .ad__logo {
+      font-size: 1.4rem;
+      color: var(--green);
+      letter-spacing: 1px;
+      font-weight: 600;
+    }
+    .ad__logo::before {
+      content: "✺";
+      color: var(--gold);
+      display: block;
+      font-size: 1.6rem;
+      text-align: center;
+      margin-bottom: 2px;
+    }
+    .ad__body { padding: 16px 16px 18px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
+    .ad__id { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.6px; color: var(--gold); font-weight: 700; }
+    .ad__primary { margin: 0; font-size: 0.92rem; }
+    .ad__meta { background: var(--cream); border-radius: 8px; padding: 12px; margin-top: auto; }
+    .ad__brandline { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.8px; color: #8a8576; }
+    .ad__headline { margin: 4px 0 2px; font-size: 1rem; color: var(--green); }
+    .ad__desc { margin: 0; font-size: 0.85rem; color: #6f6a5d; }
+    .ad__cta {
+      align-self: flex-start;
+      background: var(--green);
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      padding: 9px 18px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .ad__cta:hover { background: var(--green-soft); }
+    footer.page { text-align: center; padding: 30px; color: #8a8576; font-size: 0.85rem; }
+  </style>
+</head>
+<body>
+  <header class="page">
+    <h1>The Ivy <span class="bee">Bee</span></h1>
+    <p>50 Facebook ad variations · Premium botanical hair care — Shampoo &amp; Restore, Conditioner, and Hair Treatment in recyclable amber glass.</p>
+    <div class="tags">
+      <span class="tag">Target: Women aged 28–60</span>
+      <span class="tag">10 campaign angles</span>
+      <span class="tag">Preview only — pair with product imagery</span>
+    </div>
+  </header>
+  <main>
+      <section class="campaign">
+        <h2 class="campaign__title">Damage Repair &amp; Restore <span>(5 ads)</span></h2>
+        <div class="grid">
+        <article class="ad">
+          <div class="ad__img" aria-hidden="true">
+            <span class="ad__logo">The Ivy Bee</span>
+          </div>
+          <div class="ad__body">
+            <span class="ad__id">Ad #1 · Years of damage</span>
+            <p class="ad__primary">Heat tools, hard water, years of colour... your hair has been through it. The Ivy Bee Shampoo &amp; Restore is formulated to rebuild strength from the very first wash — so brittle ends and dull lengths become a thing of the past. Botanical, nourishing and kind to your scalp. Give your hair the repair it's been asking for.</p>
+            <div class="ad__meta">
+              <span class="ad__brandline">theivybee.com</span>
+              <h3 class="ad__headline">Repair Years Of Damage</h3>
+              <p class="ad__desc">Botanical hair care, made to restore.</p>
+            </div>
+            <button class="ad__cta" type="button">Shop Now</button>
+          </div>
+        </article>
+        <article class="ad">
+          <div class="ad__img" aria-hidden="true">
+            <span class="ad__logo">The Ivy Bee</span>
+          </div>
+          <div class="ad__body">
+            <span class="ad__id">Ad #2 · Split ends / breakage</span>
+            <p class="ad__primary">Snapping strands? Split ends that won't quit? The Ivy Bee Hair Treatment goes deep to repair and seal, leaving hair visibly smoother and stronger after just one use. The kind of results you usually only get at the salon — now part of your home routine.</p>
+            <div class="ad__meta">
+              <span class="ad__brandline">theivybee.com</span>
+              <h3 class="ad__headline">Stronger Hair, One Treatment</h3>
+              <p class="ad__desc">Deep repair, salon-level results.</p>
+            </div>
+            <button class="ad__cta" type="button">Shop Now</button>
+          </div>
+        </article>
+        <article class="ad">
+          <div class="ad__img" aria-hidden="true">
+            <span class="ad__logo">The Ivy Bee</span>
+          </div>
+          <div class="ad__body">
+            <span class="ad__id">Ad #3 · 3-step system</span>
+            <p class="ad__primary">If your hair feels rougher and weaker than it used to, you're not imagining it. Our Restore range — Shampoo, Conditioner &amp; Treatment — works together to rebuild softness and shine without silicones or harsh sulphates. Real repair you can actually feel.</p>
+            <div class="ad__meta">
+              <span class="ad__brandline">theivybee.com</span>
+              <h3 class="ad__headline">The 3-Step Restore Ritual</h3>
+              <p class="ad__desc">Wash, condition, treat. Transform.</p>
+            </div>
+            <button class="ad__cta" type="button">Learn More</button>
+          </div>
+        </article>
+        <article class="ad">
+          <div class="ad__img" aria-hidden="true">
+            <span class="ad__logo">The Ivy Bee</span>
+          </div>
+          <div class="ad__body">
+            <span class="ad__id">Ad #4 · Scalp &amp; fullness</span>
+            <p class="ad__primary">Brushing out more hair than you'd like? Strengthen what you've got. The Ivy Bee's botanical blend nourishes the scalp and fortifies each strand, so your hair feels fuller, healthier and more resilient with every wash.</p>
+            <div class="ad__meta">
+              <span class="ad__brandline">theivybee.com</span>
+              <h3 class="ad__headline">Stronger From The Root</h3>
+              <p class="ad__desc">Nourish your scalp. Love your hair.</p>
+            </div>
+            <button class="ad__cta" type="button">Shop Now</button>
+          </div>
+        </article>
+        <article class="ad">
+          <div class="ad__img" aria-hidden="true">
+            <span class="ad__logo">The Ivy Bee</span>
+          </div>
+          <div class="ad__body">
+            <span class="ad__id">Ad #5 · First-wash difference</span>
+            <p class="ad__primary">One wash. That's all it took to feel the difference. The Ivy Bee Shampoo &amp; Restore leaves hair softer than it's been in years — no weighing it down, no residue, just clean, healthy, touchable hair. Your turn.</p>
+            <div class="ad__meta">
+              <span class="ad__brandline">theivybee.com</span>
+              <h3 class="ad__headline">Feel The Difference Day One</h3>
+              <p class="ad__desc">Premium repair in every bottle.</p>
+            </div>
+            <button class="ad__cta" type="button">Shop Now</button>
+          </div>
+        </article>
+        </div>
+      </section>
+      <section class="campaign">
+        <h2 class="campaign__title">Clean &amp; Natural Ingredients <span>(5 ads)</span></h2>
+        <div class="grid">
+        <article class="ad">
+          <div class="ad__img" aria-hidden="true">
+            <span class="ad__logo">The Ivy Bee</span>
+          </div>
+          <div class="ad__body">
+            <span class="ad__id">Ad #6 · Free-from</span>
+            <p class="ad__primary">What you leave out matters as much as what you put in. The Ivy Bee is made without sulphates, parabens or silicones — just botanical ivy, honey-derived nutrients and plant actives your hair will actually thank you for.</p>
+            <div class="ad__meta">
+              <span class="ad__brandline">theivybee.com</span>
+              <h3 class="ad__headline">Clean Hair Care, Done Right</h3>
+              <p class="ad__desc">No sulphates. No parabens. No nonsense.</p>
+            </div>
+            <button class="ad__cta" type="button">Learn More</button>
+          </div>
+        </article>
+        <article class="ad">
+          <div class="ad__img" aria-hidden="true">
+            <span class="ad__logo">The Ivy Bee</span>
+          </div>
+          <div class="ad__body">
+            <span class="ad__id">Ad #7 · Read the label</span>
+            <p class="ad__primary">Read the back of your shampoo bottle lately? If you can't pronounce half of it, it might be time to switch. The Ivy Bee keeps it simple and botanical — powered by ivy and bee-inspired nourishment, kind to your hair and your scalp.</p>
+            <div class="ad__meta">
+              <span class="ad__brandline">theivybee.com</span>
+              <h3 class="ad__headline">Ingredients You Can Trust</h3>
+              <p class="ad__desc">Botanical care, transparently made.</p>
+            </div>
+            <button class="ad__cta" type="button">Shop Now</button>
+          </div>
+        </article>
+        <article class="ad">
+          <div class="ad__img" aria-hidden="true">
+            <span class="ad__logo">The Ivy Bee</span>
+          </div>
+          <div class="ad__body">
+            <span class="ad__id">Ad #8 · Powered by nature</span>
+            <p class="ad__primary">Nature does it better. We blend ivy extract and honey-derived nutrients into every bottle to gently cleanse, deeply nourish and bring back your hair's natural shine — no harsh chemicals required.</p>
+            <div class="ad__meta">
+              <span class="ad__brandline">theivybee.com</span>
+              <h3 class="ad__headline">Powered By Nature</h3>
+              <p class="ad__desc">Ivy &amp; honey-inspired hair care.</p>
+            </div>
+            <button class="ad__cta" type="button">Shop Now</button>
+          </div>
+        </article>
+        <article class="ad">
+          <div class="ad__img" aria-hidden="true">
+            <span class="ad__logo">The Ivy Bee</span>
+          </div>
+          <div class="ad__body">
+            <span class="ad__id">Ad #9 · Sensitive scalp</span>
+            <p class="ad__primary">Sensitive scalp? Gentle enough for everyday use, The Ivy Bee skips the irritating sulphates and replaces them with soothing botanicals. Cleanses beautifully without stripping — your scalp stays calm, your hair stays soft.</p>
+            <div class="ad__meta">
+              <span class="ad__brandline">theivybee.com</span>
+              <h3 class="ad__headline">Gentle Enough For Every Day</h3>
+              <p class="ad__desc">Soothing, sulphate-free, scalp-kind.</p>
+            </div>
+            <button class="ad__cta" type="button">Shop Now</button>
+          </div>
+        </article>
+        <article class="ad">
+          <div class="ad__img" aria-hidden="true">
+            <span class="ad__logo">The Ivy Bee</span>
+          </div>
+          <div class="ad__body">
+            <span class="ad__id">Ad #10 · Clean beauty crossover</span>
+            <p class="ad__primary">Your skincare is clean. Why isn't your hair care? Treat your hair to the same standard with The Ivy Bee — botanical, thoughtfully formulated and free from the harsh stuff. Premium care, naturally.</p>
+            <div class="ad__meta">
+              <span class="ad__brandline">theivybee.com</span>
+              <h3 class="ad__headline">Clean Beauty For Your Hair</h3>
+              <p class="ad__desc">The botanical upgrade your routine needs.</p>
+            </div>
+            <button class="ad__cta" type="button">Learn More</button>
+          </div>
+        </article>
+        </div>
+      </section>
+      <section class="campaign">
+        <h2 class="campaign__title">Luxury Self-Care Ritual <span>(5 ads)</span></h2>
+        <div class="grid">
+        <article class="ad">
+          <div class="ad__img" aria-hidden="true">
+            <span class="ad__logo">The Ivy Bee</span>
+          </div>
+          <div class="ad__body">
+            <span class="ad__id">Ad #11 · Time for you</span>
+            <p class="ad__primary">You give everyone else your time. Ten minutes in the shower with The Ivy Bee is for you. A rich botanical lather, a calming natural scent, and hair that feels indulgently soft. Turn wash day into a ritual you look forward to.</p>
+            <div class="ad__meta">
+              <span class="ad__brandline">theivybee.com</span>
+              <h3 class="ad__headline">Make Wash Day A Ritual</h3>
+              <p class="ad__desc">A little luxury, every single day.</p>
+            </div>
+            <button class="ad__cta" type="button">Shop Now</button>
+          </div>
+        </article>
+        <article class="ad">
+          <div class="ad__img" aria-hidden="true">
+            <span class="ad__logo">The Ivy Bee</span>
+          </div>
+          <div class="ad__body">
+            <span class="ad__id">Ad #12 · Everyday luxury</span>
+            <p class="ad__primary">Some days self-care is a full spa. Other days it's a beautiful bottle of shampoo that makes the shower feel like one. The Ivy Bee brings quiet luxury to your everyday routine — because you deserve it.</p>
+            <div class="ad__meta">
+              <span class="ad__brandline">theivybee.com</span>
+              <h3 class="ad__headline">Everyday Luxury, Bottled</h3>
+              <p class="ad__desc">Premium botanical hair care.</p>
+            </div>
+            <button class="ad__cta" type="button">Shop Now</button>
+          </div>
+        </article>
+        <article class="ad">
+          <div class="ad__img" aria-hidden="true">
+            <span class="ad__logo">The Ivy Bee</span>
+          </div>
+          <div class="ad__body">
+            <span class="ad__id">Ad #13 · Beautiful on display</span>
+            <p class="ad__primary">The amber glass. The botanical scent. The way your hair feels after. The Ivy Bee isn't just hair care — it's the most indulgent five minutes of your day. Treat yourself to the ritual.</p>
+            <div class="ad__meta">
+              <span class="ad__brandline">theivybee.com</span>
+              <h3 class="ad__headline">Beauty You'll Want On Display</h3>
+              <p class="ad__desc">Luxury that looks as good as it feels.</p>
+            </div>
+            <button class="ad__cta" type="button">Shop Now</button>
+          </div>
+        </article>
+        <article class="ad">
+          <div class="ad__img" aria-hidden="true">
+            <span class="ad__logo">The Ivy Bee</span>
+          </div>
+          <div class="ad__body">
+            <span class="ad__id">Ad #14 · Moment of calm</span>
+            <p class="ad__primary">Close your eyes. Breathe in. The natural botanical scent of The Ivy Bee turns an ordinary shower into a moment of calm — and leaves your hair soft, shiny and beautifully fragrant long after.</p>
+            <div class="ad__meta">
+              <span class="ad__brandline">theivybee.com</span>
+              <h3 class="ad__headline">A Moment Just For You</h3>
+              <p class="ad__desc">Calm your mind. Nourish your hair.</p>
+            </div>
+            <button class="ad__cta" type="button">Shop Now</button>
+          </div>
+        </article>
+        <article class="ad">
+          <div class="ad__img" aria-hidden="true">
+            <span class="ad__logo">The Ivy Bee</span>
+          </div>
+          <div class="ad__body">
+            <span class="ad__id">Ad #15 · At-home spa</span>
+            <p class="ad__primary">You've earned a little indulgence. The Ivy Bee's three-step ritual — cleanse, condition, treat — transforms wash day into the kind of pampering you'd happily pay salon prices for. Now it lives in your bathroom.</p>
+            <div class="ad__meta">
+              <span class="ad__brandline">theivybee.com</span>
+              <h3 class="ad__headline">The At-Home Spa Ritual</h3>
+              <p class="ad__desc">Salon-worthy pampering, every wash.</p>
+            </div>
+            <button class="ad__cta" type="button">Shop Now</button>
+          </div>
+        </article>
+        </div>
+      </section>
+      <section class="campaign">
+        <h2 class="campaign__title">Age Confidence (28–60) <span>(5 ads)</span></h2>
+        <div class="grid">
+        <article class="ad">
+          <div class="ad__img" aria-hidden="true">
+            <span class="ad__logo">The Ivy Bee</span>
+          </div>
+          <div class="ad__body">
+            <span class="ad__id">Ad #16 · Hair changes with age</span>
+            <p class="ad__primary">Your hair changes in your 30s, 40s and beyond — and it deserves care that keeps up. The Ivy Bee is formulated to restore moisture, strength and shine to hair that's been through life. Because gorgeous hair has no age limit.</p>
+            <div class="ad__meta">
+              <span class="ad__brandline">theivybee.com</span>
+              <h3 class="ad__headline">Care That Keeps Up With You</h3>
+              <p class="ad__desc">For hair at every stage of life.</p>
+            </div>
+            <button class="ad__cta" type="button">Shop Now</button>
+          </div>
+        </article>
+        <article class="ad">
+          <div class="ad__img" aria-hidden="true">
+            <span class="ad__logo">The Ivy Bee</span>
+          </div>
+          <div class="ad__body">
+            <span class="ad__id">Ad #17 · Hormonal change</span>
+            <p class="ad__primary">Hormonal shifts, colour, the years — they all show up in your hair. The Ivy Bee helps bring back the softness and body you remember, with botanical nourishment made for hair that's lived a little. Feel like you again.</p>
+            <div class="ad__meta">
+              <span class="ad__brandline">theivybee.com</span>
+              <h3 class="ad__headline">Bring Back Your Best Hair</h3>
+              <p class="ad__desc">Botanical care for changing hair.</p>
+            </div>
+            <button class="ad__cta" type="button">Shop Now</button>
+          </div>
+        </article>
+        <article class="ad">
+          <div class="ad__img" aria-hidden="true">
+            <span class="ad__logo">The Ivy Bee</span>
+          </div>
+          <div class="ad__body">
+            <span class="ad__id">Ad #18 · Grey &amp; coloured hair</span>
+            <p class="ad__primary">Whether you're embracing your greys or covering them, coloured and mature hair needs extra love. The Ivy Bee gently nourishes and protects, keeping your colour vibrant and your hair beautifully soft. Confidence, bottled.</p>
+            <div class="ad__meta">
+              <span class="ad__brandline">theivybee.com</span>
+              <h3 class="ad__headline">Love The Hair You're In</h3>
+              <p class="ad__desc">Gentle care for coloured &amp; grey hair.</p>
+            </div>
+            <button class="ad__cta" type="button">Shop Now</button>
+          </div>
+        </article>
+        <article class="ad">
+          <div class="ad__img" aria-hidden="true">
+            <span class="ad__logo">The Ivy Bee</span>
+          </div>
+          <div class="ad__body">
+            <span class="ad__id">Ad #19 · Thinning / dryness</span>
+            <p class="ad__primary">Noticing your hair feels thinner or drier than it used to? You're far from alone — and The Ivy Bee was made for exactly this. Strengthening, volumising botanicals help your hair feel fuller and healthier, day after day.</p>
+            <div class="ad__meta">
+              <span class="ad__brandline">theivybee.com</span>
+              <h3 class="ad__headline">Fuller, Healthier Hair</h3>
+              <p class="ad__desc">Botanical strength for thinning hair.</p>
+            </div>
+            <button class="ad__cta" type="button">Shop Now</button>
+          </div>
+        </article>
+        <article class="ad">
+          <div class="ad__img" aria-hidden="true">
+            <span class="ad__logo">The Ivy Bee</span>
+          </div>
+          <div class="ad__body">
+            <span class="ad__id">Ad #20 · No age limit</span>
+            <p class="ad__primary">Great hair doesn't retire. The Ivy Bee delivers the moisture, shine and strength mature hair craves — so you can keep turning heads at 30, 50 and every year after. Try the range women your age are switching to.</p>
+            <div class="ad__meta">
+              <span class="ad__brandline">theivybee.com</span>
+              <h3 class="ad__headline">Gorgeous Hair, No Age Limit</h3>
+              <p class="ad__desc">Premium care, made for you.</p>
+            </div>
+            <button class="ad__cta" type="button">Shop Now</button>
+          </div>
+        </article>
+        </div>
+      </section>
+      <section class="campaign">
+        <h2 class="campaign__title">Social Proof &amp; Reviews <span>(5 ads)</span></h2>
+        <div class="grid">
+        <article class="ad">
+          <div class="ad__img" aria-hidden="true">
+            <span class="ad__logo">The Ivy Bee</span>
+          </div>
+          <div class="ad__body">
+            <span class="ad__id">Ad #21 · Forever shampoo</span>
+            <p class="ad__primary">"I've finally found my forever shampoo." We hear it again and again. Women are switching to The Ivy Bee and not looking back — softer, shinier, healthier hair after just a few washes. See what the fuss is about.</p>
+            <div class="ad__meta">
+              <span class="ad__brandline">theivybee.com</span>
+              <h3 class="ad__headline">Women Are Switching To This</h3>
+              <p class="ad__desc">Join thousands who made the change.</p>
+            </div>
+            <button class="ad__cta" type="button">Shop Now</button>
+          </div>
+        </article>
+        <article class="ad">
+          <div class="ad__img" aria-hidden="true">
+            <span class="ad__logo">The Ivy Bee</span>
+          </div>
+          <div class="ad__body">
+            <span class="ad__id">Ad #22 · 5-star review</span>
+            <p class="ad__primary">★★★★★ "My hair hasn't felt this soft in years. The scent is divine and a little goes a long way." Real words from real women who tried The Ivy Bee. Ready to write your own review?</p>
+            <div class="ad__meta">
+              <span class="ad__brandline">theivybee.com</span>
+              <h3 class="ad__headline">Reviewed &amp; Loved</h3>
+              <p class="ad__desc">5-star botanical hair care.</p>
+            </div>
+            <button class="ad__cta" type="button">Shop Now</button>
+          </div>
+        </article>
+        <article class="ad">
+          <div class="ad__img" aria-hidden="true">
+            <span class="ad__logo">The Ivy Bee</span>
+          </div>
+          <div class="ad__body">
+            <span class="ad__id">Ad #23 · Sells out</span>
+            <p class="ad__primary">Sold out twice. Back in stock now. The Ivy Bee has become the hair care women can't stop recommending to their friends — and once you feel the difference, you'll understand why.</p>
+            <div class="ad__meta">
+              <span class="ad__brandline">theivybee.com</span>
+              <h3 class="ad__headline">The Hair Care Everyone's Talking About</h3>
+              <p class="ad__desc">Back in stock — for now.</p>
+            </div>
+            <button class="ad__cta" type="button">Shop Now</button>
+          </div>
+        </article>
+        <article class="ad">
+          <div class="ad__img" aria-hidden="true">
+            <span class="ad__logo">The Ivy Bee</span>
+          </div>
+          <div class="ad__body">
+            <span class="ad__id">Ad #24 · Whim to holy grail</span>
+            <p class="ad__primary">"I bought it on a whim and now I'm on my third bottle." Sometimes the gamble pays off. Thousands of women have made The Ivy Bee their everyday ritual. Take the chance — your hair will thank you.</p>
+            <div class="ad__meta">
+              <span class="ad__brandline">theivybee.com</span>
+              <h3 class="ad__headline">From Whim To Holy Grail</h3>
+              <p class="ad__desc">Loved by women everywhere.</p>
+            </div>
+            <button class="ad__cta" type="button">Shop Now</button>
+          </div>
+        </article>
+        <article class="ad">
+          <div class="ad__img" aria-hidden="true">
+            <span class="ad__logo">The Ivy Bee</span>
+          </div>
+          <div class="ad__body">
+            <span class="ad__id">Ad #25 · Compliments</span>
+            <p class="ad__primary">When your hairdresser asks what you've been using... that's when you know. The Ivy Bee gets noticed — softer, shinier, healthier hair that turns heads. Find out what all the compliments are about.</p>
+            <div class="ad__meta">
+              <span class="ad__brandline">theivybee.com</span>
+              <h3 class="ad__headline">Hair That Gets Compliments</h3>
+              <p class="ad__desc">Try the range women rave about.</p>
+            </div>
+            <button class="ad__cta" type="button">Shop Now</button>
+          </div>
+        </article>
+        </div>
+      </section>
+      <section class="campaign">
+        <h2 class="campaign__title">Brand &amp; Founder Story <span>(5 ads)</span></h2>
+        <div class="grid">
+        <article class="ad">
+          <div class="ad__img" aria-hidden="true">
+            <span class="ad__logo">The Ivy Bee</span>
+          </div>
+          <div class="ad__body">
+            <span class="ad__id">Ad #26 · Why we started</span>
+            <p class="ad__primary">We started The Ivy Bee with one belief: everyday hair care should feel like a treat, not a compromise. No harsh chemicals, no cutting corners — just beautifully crafted botanical formulas made in small batches with real care. This is hair care, reimagined.</p>
+            <div class="ad__meta">
+              <span class="ad__brandline">theivybee.com</span>
+              <h3 class="ad__headline">Made With Real Care</h3>
+              <p class="ad__desc">Small-batch botanical hair care.</p>
+            </div>
+            <button class="ad__cta" type="button">Learn More</button>
+          </div>
+        </article>
+        <article class="ad">
+          <div class="ad__img" aria-hidden="true">
+            <span class="ad__logo">The Ivy Bee</span>
+          </div>
+          <div class="ad__body">
+            <span class="ad__id">Ad #27 · Born from frustration</span>
+            <p class="ad__primary">Frustrated by shampoos that promised the world and stripped our hair instead, we made our own. The Ivy Bee is the result — botanical, gentle and genuinely effective. Crafted by people who were tired of settling. Meet your new everyday.</p>
+            <div class="ad__meta">
+              <span class="ad__brandline">theivybee.com</span>
+              <h3 class="ad__headline">Born From Frustration, Made With Love</h3>
+              <p class="ad__desc">The botanical hair care we always wanted.</p>
+            </div>
+            <button class="ad__cta" type="button">Learn More</button>
+          </div>
+        </article>
+        <article class="ad">
+          <div class="ad__img" aria-hidden="true">
+            <span class="ad__logo">The Ivy Bee</span>
+          </div>
+          <div class="ad__body">
+            <span class="ad__id">Ad #28 · Meaning behind the name</span>
+            <p class="ad__primary">Ivy for resilience. The bee for nature's nourishment. Every bottle of The Ivy Bee is inspired by the quiet power of nature — thoughtfully formulated to bring out the healthiest version of your hair. Discover the story behind the brand.</p>
+            <div class="ad__meta">
+              <span class="ad__brandline">theivybee.com</span>
+              <h3 class="ad__headline">The Story In Every Bottle</h3>
+              <p class="ad__desc">Nature-inspired, thoughtfully made.</p>
+            </div>
+            <button class="ad__cta" type="button">Learn More</button>
+          </div>
+        </article>
+        <article class="ad">
+          <div class="ad__img" aria-hidden="true">
+            <span class="ad__logo">The Ivy Bee</span>
+          </div>
+          <div class="ad__body">
+            <span class="ad__id">Ad #29 · Premium for real women</span>
+            <p class="ad__primary">Premium doesn't have to mean pretentious. We made The Ivy Bee to bring salon-quality, botanical hair care to real women's bathrooms — at a price that feels fair and results that feel incredible. Welcome to your new favourite.</p>
+            <div class="ad__meta">
+              <span class="ad__brandline">theivybee.com</span>
+              <h3 class="ad__headline">Premium Hair Care, For Real Women</h3>
+              <p class="ad__desc">Salon quality, beautifully accessible.</p>
+            </div>
+            <button class="ad__cta" type="button">Shop Now</button>
+          </div>
+        </article>
+        <article class="ad">
+          <div class="ad__img" aria-hidden="true">
+            <span class="ad__logo">The Ivy Bee</span>
+          </div>
+          <div class="ad__body">
+            <span class="ad__id">Ad #30 · Crafted properly</span>
+            <p class="ad__primary">Every bottle is crafted in small batches, bottled in eco-friendly amber glass, and made without the nasties. The Ivy Bee is hair care done properly — slowly, thoughtfully, and with you in mind. Try the difference real care makes.</p>
+            <div class="ad__meta">
+              <span class="ad__brandline">theivybee.com</span>
+              <h3 class="ad__headline">Hair Care Done Properly</h3>
+              <p class="ad__desc">Crafted in small batches, with care.</p>
+            </div>
+            <button class="ad__cta" type="button">Learn More</button>
+          </div>
+        </article>
+        </div>
+      </section>
+      <section class="campaign">
+        <h2 class="campaign__title">New Launch &amp; Intro Offer <span>(5 ads)</span></h2>
+        <div class="grid">
+        <article class="ad">
+          <div class="ad__img" aria-hidden="true">
+            <span class="ad__logo">The Ivy Bee</span>
+          </div>
+          <div class="ad__body">
+            <span class="ad__id">Ad #31 · Just launched</span>
+            <p class="ad__primary">It's here. The Ivy Bee has officially launched — and it's the botanical hair care upgrade you've been waiting for. Be among the first to try Shampoo, Conditioner &amp; Treatment, and discover what healthy hair really feels like.</p>
+            <div class="ad__meta">
+              <span class="ad__brandline">theivybee.com</span>
+              <h3 class="ad__headline">Just Launched: The Ivy Bee</h3>
+              <p class="ad__desc">New premium botanical hair care.</p>
+            </div>
+            <button class="ad__cta" type="button">Shop Now</button>
+          </div>
+        </article>
+        <article class="ad">
+          <div class="ad__img" aria-hidden="true">
+            <span class="ad__logo">The Ivy Bee</span>
+          </div>
+          <div class="ad__body">
+            <span class="ad__id">Ad #32 · Complete trio</span>
+            <p class="ad__primary">New here? Start with the trio. The Ivy Bee Shampoo, Conditioner &amp; Hair Treatment work together to cleanse, nourish and repair — the complete ritual for softer, stronger, shinier hair. First time? You're going to love this.</p>
+            <div class="ad__meta">
+              <span class="ad__brandline">theivybee.com</span>
+              <h3 class="ad__headline">Try The Complete Ritual</h3>
+              <p class="ad__desc">Shampoo. Condition. Treat. Transform.</p>
+            </div>
+            <button class="ad__cta" type="button">Shop Now</button>
+          </div>
+        </article>
+        <article class="ad">
+          <div class="ad__img" aria-hidden="true">
+            <span class="ad__logo">The Ivy Bee</span>
+          </div>
+          <div class="ad__body">
+            <span class="ad__id">Ad #33 · First-order offer</span>
+            <p class="ad__primary">First order? Here's a little welcome gift. Treat your hair to The Ivy Bee and see why it's becoming the go-to for women who want clean, premium, results-driven hair care. There's never been a better time to give it a go.</p>
+            <div class="ad__meta">
+              <span class="ad__brandline">theivybee.com</span>
+              <h3 class="ad__headline">New Customer? Save On Your First Order</h3>
+              <p class="ad__desc">Your hair upgrade starts here.</p>
+            </div>
+            <button class="ad__cta" type="button">Get Offer</button>
+          </div>
+        </article>
+        <article class="ad">
+          <div class="ad__img" aria-hidden="true">
+            <span class="ad__logo">The Ivy Bee</span>
+          </div>
+          <div class="ad__body">
+            <span class="ad__id">Ad #34 · Start with the hero</span>
+            <p class="ad__primary">Curious but not ready for the full range? Start with the Shampoo &amp; Restore — the hero product women fall for first. One bottle might just change your wash day forever.</p>
+            <div class="ad__meta">
+              <span class="ad__brandline">theivybee.com</span>
+              <h3 class="ad__headline">Start With The Hero Product</h3>
+              <p class="ad__desc">Meet the shampoo everyone loves.</p>
+            </div>
+            <button class="ad__cta" type="button">Shop Now</button>
+          </div>
+        </article>
+        <article class="ad">
+          <div class="ad__img" aria-hidden="true">
+            <span class="ad__logo">The Ivy Bee</span>
+          </div>
+          <div class="ad__body">
+            <span class="ad__id">Ad #35 · Selling fast</span>
+            <p class="ad__primary">The product everyone's been asking for is finally here — and the first batch is moving fast. Don't miss your chance to try The Ivy Bee while it's in stock. Premium botanical hair care, ready to ship.</p>
+            <div class="ad__meta">
+              <span class="ad__brandline">theivybee.com</span>
+              <h3 class="ad__headline">New Launch — Selling Fast</h3>
+              <p class="ad__desc">Get yours before it's gone.</p>
+            </div>
+            <button class="ad__cta" type="button">Shop Now</button>
+          </div>
+        </article>
+        </div>
+      </section>
+      <section class="campaign">
+        <h2 class="campaign__title">Sustainability &amp; Eco <span>(5 ads)</span></h2>
+        <div class="grid">
+        <article class="ad">
+          <div class="ad__img" aria-hidden="true">
+            <span class="ad__logo">The Ivy Bee</span>
+          </div>
+          <div class="ad__body">
+            <span class="ad__id">Ad #36 · Recyclable glass</span>
+            <p class="ad__primary">Beautiful for your hair. Kinder to the planet. The Ivy Bee comes in refined, recyclable amber glass — no cheap plastic, no compromise. Premium hair care you can feel good about, inside and out.</p>
+            <div class="ad__meta">
+              <span class="ad__brandline">theivybee.com</span>
+              <h3 class="ad__headline">Hair Care That Gives Back</h3>
+              <p class="ad__desc">Recyclable glass. Botanical formulas.</p>
+            </div>
+            <button class="ad__cta" type="button">Learn More</button>
+          </div>
+        </article>
+        <article class="ad">
+          <div class="ad__img" aria-hidden="true">
+            <span class="ad__logo">The Ivy Bee</span>
+          </div>
+          <div class="ad__body">
+            <span class="ad__id">Ad #37 · Luxury with conscience</span>
+            <p class="ad__primary">We believe luxury and responsibility belong together. That's why The Ivy Bee is cruelty-free, bottled in reusable amber glass, and made with botanical ingredients that are kind to your hair and the world around you.</p>
+            <div class="ad__meta">
+              <span class="ad__brandline">theivybee.com</span>
+              <h3 class="ad__headline">Luxury With A Conscience</h3>
+              <p class="ad__desc">Cruelty-free, botanical, beautifully made.</p>
+            </div>
+            <button class="ad__cta" type="button">Learn More</button>
+          </div>
+        </article>
+        <article class="ad">
+          <div class="ad__img" aria-hidden="true">
+            <span class="ad__logo">The Ivy Bee</span>
+          </div>
+          <div class="ad__body">
+            <span class="ad__id">Ad #38 · Refill &amp; reuse</span>
+            <p class="ad__primary">Those amber glass bottles aren't just gorgeous on your shelf — they're better for the planet, too. Refill, reuse, repeat. The Ivy Bee is premium hair care designed to last. Make the beautiful switch.</p>
+            <div class="ad__meta">
+              <span class="ad__brandline">theivybee.com</span>
+              <h3 class="ad__headline">Too Beautiful To Throw Away</h3>
+              <p class="ad__desc">Sustainable amber glass, by design.</p>
+            </div>
+            <button class="ad__cta" type="button">Shop Now</button>
+          </div>
+        </article>
+        <article class="ad">
+          <div class="ad__img" aria-hidden="true">
+            <span class="ad__logo">The Ivy Bee</span>
+          </div>
+          <div class="ad__body">
+            <span class="ad__id">Ad #39 · Inspired by the bee</span>
+            <p class="ad__primary">Inspired by the bee — nature's hardest worker — we're committed to formulas that respect the natural world. Botanical, cruelty-free and thoughtfully packaged. The Ivy Bee proves you don't have to choose between gorgeous hair and a clear conscience.</p>
+            <div class="ad__meta">
+              <span class="ad__brandline">theivybee.com</span>
+              <h3 class="ad__headline">Kind To Hair. Kind To Nature.</h3>
+              <p class="ad__desc">Botanical care, made responsibly.</p>
+            </div>
+            <button class="ad__cta" type="button">Learn More</button>
+          </div>
+        </article>
+        <article class="ad">
+          <div class="ad__img" aria-hidden="true">
+            <span class="ad__logo">The Ivy Bee</span>
+          </div>
+          <div class="ad__body">
+            <span class="ad__id">Ad #40 · Plastic-free shelf</span>
+            <p class="ad__primary">Plastic-free bathroom goals start here. The Ivy Bee's recyclable amber glass bottles look stunning and tread lightly — premium, sustainable hair care you'll be proud to display. Upgrade your shelf and your hair.</p>
+            <div class="ad__meta">
+              <span class="ad__brandline">theivybee.com</span>
+              <h3 class="ad__headline">Upgrade Your Shelf</h3>
+              <p class="ad__desc">Sustainable beauty that looks the part.</p>
+            </div>
+            <button class="ad__cta" type="button">Shop Now</button>
+          </div>
+        </article>
+        </div>
+      </section>
+      <section class="campaign">
+        <h2 class="campaign__title">Scent &amp; Sensory <span>(5 ads)</span></h2>
+        <div class="grid">
+        <article class="ad">
+          <div class="ad__img" aria-hidden="true">
+            <span class="ad__logo">The Ivy Bee</span>
+          </div>
+          <div class="ad__body">
+            <span class="ad__id">Ad #41 · The scent first</span>
+            <p class="ad__primary">The first thing you'll notice is the scent. Soft, botanical and never overpowering — The Ivy Bee turns your shower into a sensory escape, and leaves your hair smelling subtly beautiful all day long.</p>
+            <div class="ad__meta">
+              <span class="ad__brandline">theivybee.com</span>
+              <h3 class="ad__headline">Hair That Smells Incredible</h3>
+              <p class="ad__desc">A botanical scent you'll fall for.</p>
+            </div>
+            <button class="ad__cta" type="button">Shop Now</button>
+          </div>
+        </article>
+        <article class="ad">
+          <div class="ad__img" aria-hidden="true">
+            <span class="ad__logo">The Ivy Bee</span>
+          </div>
+          <div class="ad__body">
+            <span class="ad__id">Ad #42 · Signature scent</span>
+            <p class="ad__primary">Ever had someone lean in just to ask what your hair smells like? With The Ivy Bee, get used to it. A delicate, natural fragrance that lingers gently — your new signature scent might just be your shampoo.</p>
+            <div class="ad__meta">
+              <span class="ad__brandline">theivybee.com</span>
+              <h3 class="ad__headline">Your New Signature Scent</h3>
+              <p class="ad__desc">Subtle, natural, unforgettable.</p>
+            </div>
+            <button class="ad__cta" type="button">Shop Now</button>
+          </div>
+        </article>
+        <article class="ad">
+          <div class="ad__img" aria-hidden="true">
+            <span class="ad__logo">The Ivy Bee</span>
+          </div>
+          <div class="ad__body">
+            <span class="ad__id">Ad #43 · Whole experience</span>
+            <p class="ad__primary">It's not just clean hair — it's an experience. The rich lather, the calming botanical aroma, the silky finish. The Ivy Bee makes every wash feel like a treat for the senses. Once you try it, plain shampoo just won't do.</p>
+            <div class="ad__meta">
+              <span class="ad__brandline">theivybee.com</span>
+              <h3 class="ad__headline">A Treat For Your Senses</h3>
+              <p class="ad__desc">Indulgent botanical hair care.</p>
+            </div>
+            <button class="ad__cta" type="button">Shop Now</button>
+          </div>
+        </article>
+        <article class="ad">
+          <div class="ad__img" aria-hidden="true">
+            <span class="ad__logo">The Ivy Bee</span>
+          </div>
+          <div class="ad__body">
+            <span class="ad__id">Ad #44 · Wash away the day</span>
+            <p class="ad__primary">Soft on your hair, soft on your senses. The Ivy Bee's natural botanical scent transforms an everyday shower into a calming ritual — the little moment of luxury your day's been missing.</p>
+            <div class="ad__meta">
+              <span class="ad__brandline">theivybee.com</span>
+              <h3 class="ad__headline">Wash Away The Day</h3>
+              <p class="ad__desc">Calming, botanical, beautiful.</p>
+            </div>
+            <button class="ad__cta" type="button">Shop Now</button>
+          </div>
+        </article>
+        <article class="ad">
+          <div class="ad__img" aria-hidden="true">
+            <span class="ad__logo">The Ivy Bee</span>
+          </div>
+          <div class="ad__body">
+            <span class="ad__id">Ad #45 · Months perfecting scent</span>
+            <p class="ad__primary">We spent months perfecting the scent — because hair care should delight every sense, not just leave you clean. The Ivy Bee's signature botanical fragrance is subtle, sophisticated and utterly addictive. Breathe it in.</p>
+            <div class="ad__meta">
+              <span class="ad__brandline">theivybee.com</span>
+              <h3 class="ad__headline">Scent-sational Hair</h3>
+              <p class="ad__desc">A fragrance worth obsessing over.</p>
+            </div>
+            <button class="ad__cta" type="button">Shop Now</button>
+          </div>
+        </article>
+        </div>
+      </section>
+      <section class="campaign">
+        <h2 class="campaign__title">Salon Quality &amp; Value <span>(5 ads)</span></h2>
+        <div class="grid">
+        <article class="ad">
+          <div class="ad__img" aria-hidden="true">
+            <span class="ad__logo">The Ivy Bee</span>
+          </div>
+          <div class="ad__body">
+            <span class="ad__id">Ad #46 · Salon results at home</span>
+            <p class="ad__primary">Salon-soft hair without the salon price tag. The Ivy Bee delivers the smooth, shiny, healthy results you'd expect from a professional treatment — in the comfort of your own shower. Why pay more?</p>
+            <div class="ad__meta">
+              <span class="ad__brandline">theivybee.com</span>
+              <h3 class="ad__headline">Salon Results At Home</h3>
+              <p class="ad__desc">Professional-quality botanical care.</p>
+            </div>
+            <button class="ad__cta" type="button">Shop Now</button>
+          </div>
+        </article>
+        <article class="ad">
+          <div class="ad__img" aria-hidden="true">
+            <span class="ad__logo">The Ivy Bee</span>
+          </div>
+          <div class="ad__body">
+            <span class="ad__id">Ad #47 · Premium, smart price</span>
+            <p class="ad__primary">Think premium hair care has to break the bank? Think again. The Ivy Bee brings botanical, salon-grade formulas to your bathroom for a fraction of what you'd spend at the chair. Treat yourself, smartly.</p>
+            <div class="ad__meta">
+              <span class="ad__brandline">theivybee.com</span>
+              <h3 class="ad__headline">Premium Hair, Smart Price</h3>
+              <p class="ad__desc">Luxury that makes sense.</p>
+            </div>
+            <button class="ad__cta" type="button">Shop Now</button>
+          </div>
+        </article>
+        <article class="ad">
+          <div class="ad__img" aria-hidden="true">
+            <span class="ad__logo">The Ivy Bee</span>
+          </div>
+          <div class="ad__body">
+            <span class="ad__id">Ad #48 · A little goes far</span>
+            <p class="ad__primary">A little goes a long way. One pump of The Ivy Bee Shampoo lathers richly and lasts — so your beautiful bottle stretches further than you'd think. Premium quality that's kind to your hair and your wallet.</p>
+            <div class="ad__meta">
+              <span class="ad__brandline">theivybee.com</span>
+              <h3 class="ad__headline">Luxury That Lasts</h3>
+              <p class="ad__desc">A little goes a long way.</p>
+            </div>
+            <button class="ad__cta" type="button">Shop Now</button>
+          </div>
+        </article>
+        <article class="ad">
+          <div class="ad__img" aria-hidden="true">
+            <span class="ad__logo">The Ivy Bee</span>
+          </div>
+          <div class="ad__body">
+            <span class="ad__id">Ad #49 · Skip the salon</span>
+            <p class="ad__primary">Skip the salon, keep the results. The Ivy Bee Hair Treatment gives you that just-left-the-chair softness and shine at home, whenever you want it. Your weekly ritual for gorgeous, healthy hair.</p>
+            <div class="ad__meta">
+              <span class="ad__brandline">theivybee.com</span>
+              <h3 class="ad__headline">Salon Softness, On Repeat</h3>
+              <p class="ad__desc">Weekly treatment, endless shine.</p>
+            </div>
+            <button class="ad__cta" type="button">Shop Now</button>
+          </div>
+        </article>
+        <article class="ad">
+          <div class="ad__img" aria-hidden="true">
+            <span class="ad__logo">The Ivy Bee</span>
+          </div>
+          <div class="ad__body">
+            <span class="ad__id">Ad #50 · Worth the investment</span>
+            <p class="ad__primary">Invest in your hair — it's the one thing you never take off. The Ivy Bee's complete ritual is the upgrade that pays you back every single day, in softer, stronger, more beautiful hair. Worth every penny.</p>
+            <div class="ad__meta">
+              <span class="ad__brandline">theivybee.com</span>
+              <h3 class="ad__headline">The Upgrade Worth Making</h3>
+              <p class="ad__desc">Premium botanical hair care.</p>
+            </div>
+            <button class="ad__cta" type="button">Shop Now</button>
+          </div>
+        </article>
+        </div>
+      </section>
+  </main>
+  <footer class="page">
+    Generated from <code>data/ads.json</code> · The Ivy Bee — premium botanical hair care.
+  </footer>
+</body>
+</html>
