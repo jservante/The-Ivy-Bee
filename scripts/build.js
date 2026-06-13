@@ -3,14 +3,16 @@
  * Build script for The Ivy Bee Facebook ad set.
  *
  * Reads data/ads.json (the single source of truth) and generates:
- *   - facebook-ads.csv  -> bulk-import friendly spreadsheet of all 50 ads
- *   - index.html        -> visual gallery to preview every ad
+ *   - facebook-ads.csv     -> bulk-import friendly spreadsheet of all 50 ads
+ *   - creatives/ad-NN.svg  -> one branded ad graphic per ad (1080x1350)
+ *   - index.html           -> visual gallery rendering every creative + copy
  *
  * Run with: npm run build  (or: node scripts/build.js)
  */
 
 const fs = require("fs");
 const path = require("path");
+const { creativeSVG } = require("./creative");
 
 const ROOT = path.resolve(__dirname, "..");
 const data = JSON.parse(fs.readFileSync(path.join(ROOT, "data", "ads.json"), "utf8"));
@@ -18,7 +20,6 @@ const { brand, product, audience, ads } = data;
 
 /* ---------- CSV ---------- */
 
-// Escape a value for CSV (wrap in quotes, double any internal quotes).
 function csvCell(value) {
   const s = String(value == null ? "" : value);
   return '"' + s.replace(/"/g, '""') + '"';
@@ -33,6 +34,7 @@ const csvHeader = [
   "Description",
   "Call To Action",
   "Audience",
+  "Creative File",
 ];
 
 const csvRows = ads.map((ad) =>
@@ -45,6 +47,7 @@ const csvRows = ads.map((ad) =>
     ad.description,
     ad.cta,
     audience,
+    `creatives/ad-${String(ad.id).padStart(2, "0")}.svg`,
   ]
     .map(csvCell)
     .join(",")
@@ -53,16 +56,26 @@ const csvRows = ads.map((ad) =>
 const csv = [csvHeader.map(csvCell).join(","), ...csvRows].join("\r\n") + "\r\n";
 fs.writeFileSync(path.join(ROOT, "facebook-ads.csv"), csv, "utf8");
 
+/* ---------- Creative SVG files ---------- */
+
+const creativeDir = path.join(ROOT, "creatives");
+fs.mkdirSync(creativeDir, { recursive: true });
+
+const creatives = new Map();
+for (const ad of ads) {
+  const svg = creativeSVG(ad);
+  creatives.set(ad.id, svg);
+  const file = path.join(creativeDir, `ad-${String(ad.id).padStart(2, "0")}.svg`);
+  fs.writeFileSync(file, svg, "utf8");
+}
+
 /* ---------- HTML gallery ---------- */
 
 function esc(s) {
-  return String(s)
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;");
+  return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 }
 
-// Group ads by campaign, preserving order of first appearance.
+// Group ads by campaign, preserving first-seen order.
 const campaigns = [];
 const byCampaign = new Map();
 for (const ad of ads) {
@@ -75,18 +88,11 @@ for (const ad of ads) {
 
 function adCard(ad) {
   return `        <article class="ad">
-          <div class="ad__img" aria-hidden="true">
-            <span class="ad__logo">The Ivy Bee</span>
-          </div>
+          <div class="ad__creative">${creatives.get(ad.id)}</div>
           <div class="ad__body">
-            <span class="ad__id">Ad #${ad.id} · ${esc(ad.angle)}</span>
+            <span class="ad__id">Ad #${ad.id} &middot; ${esc(ad.angle)} &middot; ${esc(ad.cta)}</span>
+            <p class="ad__label">Primary text (sits above the image in feed):</p>
             <p class="ad__primary">${esc(ad.primary)}</p>
-            <div class="ad__meta">
-              <span class="ad__brandline">theivybee.com</span>
-              <h3 class="ad__headline">${esc(ad.headline)}</h3>
-              <p class="ad__desc">${esc(ad.description)}</p>
-            </div>
-            <button class="ad__cta" type="button">${esc(ad.cta)}</button>
           </div>
         </article>`;
 }
@@ -127,113 +133,42 @@ const html = `<!DOCTYPE html>
       background: var(--cream);
       line-height: 1.5;
     }
-    header.page {
-      background: var(--green);
-      color: #fff;
-      padding: 48px 24px 40px;
-      text-align: center;
-    }
-    header.page h1 {
-      margin: 0 0 8px;
-      font-size: 2.4rem;
-      font-weight: 600;
-      letter-spacing: 0.5px;
-    }
+    header.page { background: var(--green); color: #fff; padding: 48px 24px 40px; text-align: center; }
+    header.page h1 { margin: 0 0 8px; font-size: 2.4rem; font-weight: 600; letter-spacing: 0.5px; }
     header.page h1 .bee { color: var(--gold-soft); }
-    header.page p { margin: 4px auto; max-width: 640px; opacity: 0.9; }
+    header.page p { margin: 4px auto; max-width: 680px; opacity: 0.9; }
     header.page .tags { margin-top: 16px; }
-    header.page .tag {
-      display: inline-block;
-      border: 1px solid var(--gold-soft);
-      color: var(--gold-soft);
-      border-radius: 999px;
-      padding: 4px 14px;
-      margin: 4px;
-      font-size: 0.85rem;
-    }
-    main { max-width: 1180px; margin: 0 auto; padding: 32px 20px 80px; }
-    .campaign { margin-top: 40px; }
-    .campaign__title {
-      font-size: 1.35rem;
-      color: var(--green);
-      border-bottom: 2px solid var(--gold);
-      padding-bottom: 8px;
-      margin-bottom: 20px;
-    }
+    header.page .tag { display: inline-block; border: 1px solid var(--gold-soft); color: var(--gold-soft); border-radius: 999px; padding: 4px 14px; margin: 4px; font-size: 0.85rem; }
+    main { max-width: 1240px; margin: 0 auto; padding: 32px 20px 80px; }
+    .campaign { margin-top: 44px; }
+    .campaign__title { font-size: 1.35rem; color: var(--green); border-bottom: 2px solid var(--gold); padding-bottom: 8px; margin-bottom: 22px; }
     .campaign__title span { color: var(--gold); font-size: 0.9rem; font-weight: 400; }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-      gap: 22px;
-    }
-    .ad {
-      background: #fff;
-      border: 1px solid var(--line);
-      border-radius: 10px;
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      box-shadow: 0 2px 10px rgba(28, 67, 50, 0.06);
-    }
-    .ad__img {
-      height: 150px;
-      background: linear-gradient(135deg, var(--cream), #efe7d4);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-bottom: 1px solid var(--line);
-    }
-    .ad__logo {
-      font-size: 1.4rem;
-      color: var(--green);
-      letter-spacing: 1px;
-      font-weight: 600;
-    }
-    .ad__logo::before {
-      content: "✺";
-      color: var(--gold);
-      display: block;
-      font-size: 1.6rem;
-      text-align: center;
-      margin-bottom: 2px;
-    }
-    .ad__body { padding: 16px 16px 18px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 24px; }
+    .ad { background: #fff; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; box-shadow: 0 3px 14px rgba(28, 67, 50, 0.08); }
+    .ad__creative { line-height: 0; background: #fff; }
+    .ad__creative svg { width: 100%; height: auto; display: block; }
+    .ad__body { padding: 16px 16px 18px; display: flex; flex-direction: column; gap: 6px; }
     .ad__id { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.6px; color: var(--gold); font-weight: 700; }
+    .ad__label { margin: 6px 0 0; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.5px; color: #9a9486; }
     .ad__primary { margin: 0; font-size: 0.92rem; }
-    .ad__meta { background: var(--cream); border-radius: 8px; padding: 12px; margin-top: auto; }
-    .ad__brandline { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.8px; color: #8a8576; }
-    .ad__headline { margin: 4px 0 2px; font-size: 1rem; color: var(--green); }
-    .ad__desc { margin: 0; font-size: 0.85rem; color: #6f6a5d; }
-    .ad__cta {
-      align-self: flex-start;
-      background: var(--green);
-      color: #fff;
-      border: none;
-      border-radius: 6px;
-      padding: 9px 18px;
-      font-size: 0.85rem;
-      font-weight: 600;
-      cursor: pointer;
-    }
-    .ad__cta:hover { background: var(--green-soft); }
     footer.page { text-align: center; padding: 30px; color: #8a8576; font-size: 0.85rem; }
   </style>
 </head>
 <body>
   <header class="page">
     <h1>The Ivy <span class="bee">Bee</span></h1>
-    <p>${esc(ads.length)} Facebook ad variations · ${esc(product)}</p>
+    <p>${esc(ads.length)} Facebook ad creatives &middot; ${esc(product)}</p>
     <div class="tags">
       <span class="tag">Target: ${esc(audience)}</span>
       <span class="tag">${esc(campaigns.length)} campaign angles</span>
-      <span class="tag">Preview only — pair with product imagery</span>
+      <span class="tag">Each image is 1080&times;1350 (4:5 feed)</span>
     </div>
   </header>
   <main>
 ${sections}
   </main>
   <footer class="page">
-    Generated from <code>data/ads.json</code> · The Ivy Bee — premium botanical hair care.
+    Generated from <code>data/ads.json</code> &middot; The Ivy Bee — premium botanical hair care.
   </footer>
 </body>
 </html>
@@ -242,5 +177,27 @@ ${sections}
 fs.writeFileSync(path.join(ROOT, "index.html"), html, "utf8");
 
 console.log(`Built ${ads.length} ads across ${campaigns.length} campaigns.`);
-console.log(" - facebook-ads.csv");
-console.log(" - index.html");
+console.log(` - facebook-ads.csv`);
+console.log(` - creatives/ (${ads.length} SVG files)`);
+console.log(` - index.html`);
+
+/* ---------- Optional PNG export (for direct Facebook upload) ---------- */
+// Facebook Ads Manager accepts PNG/JPG, not SVG. If "sharp" is installed
+// (npm install sharp), we also export 1080x1350 PNGs. Otherwise we skip it.
+(async () => {
+  let sharp;
+  try {
+    sharp = require("sharp");
+  } catch (e) {
+    console.log(` - PNG export skipped (run "npm install sharp" to enable)`);
+    return;
+  }
+  for (const ad of ads) {
+    const name = `ad-${String(ad.id).padStart(2, "0")}`;
+    await sharp(Buffer.from(creatives.get(ad.id)), { density: 96 })
+      .resize(1080, 1350)
+      .png()
+      .toFile(path.join(creativeDir, `${name}.png`));
+  }
+  console.log(` - creatives/ (${ads.length} PNG files)`);
+})();

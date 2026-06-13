@@ -1,22 +1,22 @@
 {
   "brand": "The Ivy Bee",
-  "product": "Premium botanical hair care — Shampoo & Restore, Conditioner, and Hair Treatment in recyclable amber glass.",
-  "audience": "Women aged 28–60",
+  "product": "Premium botanical hair care. Shampoo & Restore, Conditioner, and Hair Treatment in recyclable amber glass.",
+  "audience": "Women aged 28-60",
   "ads": [
     {
       "id": 1,
       "campaign": "Damage Repair & Restore",
       "angle": "Years of damage",
-      "primary": "Heat tools, hard water, years of colour... your hair has been through it. The Ivy Bee Shampoo & Restore is formulated to rebuild strength from the very first wash — so brittle ends and dull lengths become a thing of the past. Botanical, nourishing and kind to your scalp. Give your hair the repair it's been asking for.",
+      "primary": "Heat tools, hard water, years of colour. Your hair has been through a lot, and it tends to show. The Ivy Bee Shampoo & Restore gets to work from the very first wash, building strength back into brittle, dull ends until they feel soft again. It's botanical, it's gentle on your scalp, and honestly, your hair has earned it.",
       "headline": "Repair Years Of Damage",
-      "description": "Botanical hair care, made to restore.",
+      "description": "Botanical hair care that restores.",
       "cta": "Shop Now"
     },
     {
       "id": 2,
       "campaign": "Damage Repair & Restore",
-      "angle": "Split ends / breakage",
-      "primary": "Snapping strands? Split ends that won't quit? The Ivy Bee Hair Treatment goes deep to repair and seal, leaving hair visibly smoother and stronger after just one use. The kind of results you usually only get at the salon — now part of your home routine.",
+      "angle": "Split ends and breakage",
+      "primary": "Strands snapping every time you brush? Split ends that just won't quit? Our Hair Treatment sinks in deep to repair and seal, so your hair feels smoother and stronger after a single use. It's the kind of result you'd usually book a salon for, now sitting quietly in your shower.",
       "headline": "Stronger Hair, One Treatment",
       "description": "Deep repair, salon-level results.",
       "cta": "Shop Now"
@@ -25,7 +25,7 @@
       "id": 3,
       "campaign": "Damage Repair & Restore",
       "angle": "3-step system",
-      "primary": "If your hair feels rougher and weaker than it used to, you're not imagining it. Our Restore range — Shampoo, Conditioner & Treatment — works together to rebuild softness and shine without silicones or harsh sulphates. Real repair you can actually feel.",
+      "primary": "If your hair feels rougher than it used to, you're not imagining it. Our Restore range works as a team. Shampoo, Conditioner and Treatment, all building back softness and shine, with no silicones or harsh sulphates getting in the way. This is the kind of repair you can actually feel.",
       "headline": "The 3-Step Restore Ritual",
       "description": "Wash, condition, treat. Transform.",
       "cta": "Learn More"
@@ -33,18 +33,18 @@
     {
       "id": 4,
       "campaign": "Damage Repair & Restore",
-      "angle": "Scalp & fullness",
-      "primary": "Brushing out more hair than you'd like? Strengthen what you've got. The Ivy Bee's botanical blend nourishes the scalp and fortifies each strand, so your hair feels fuller, healthier and more resilient with every wash.",
+      "angle": "Scalp and fullness",
+      "primary": "Finding more hair in your brush than you'd like? Let's look after what you've got. The Ivy Bee feeds your scalp with botanicals and strengthens every strand, so your hair feels fuller, healthier and a good deal more resilient, wash after wash.",
       "headline": "Stronger From The Root",
-      "description": "Nourish your scalp. Love your hair.",
+      "description": "Look after your scalp, love your hair.",
       "cta": "Shop Now"
     },
     {
       "id": 5,
       "campaign": "Damage Repair & Restore",
       "angle": "First-wash difference",
-      "primary": "One wash. That's all it took to feel the difference. The Ivy Bee Shampoo & Restore leaves hair softer than it's been in years — no weighing it down, no residue, just clean, healthy, touchable hair. Your turn.",
-      "headline": "Feel The Difference Day One",
+      "primary": "One wash. That was all it took to feel the difference. The Ivy Bee Shampoo & Restore left my hair softer than it's felt in years. No heavy residue, nothing weighing it down, just clean, healthy hair I actually want to touch. Go on, see for yourself.",
+      "headline": "Feel The Difference On Day One",
       "description": "Premium repair in every bottle.",
       "cta": "Shop Now"
     },
@@ -52,7 +52,7 @@
       "id": 6,
       "campaign": "Clean & Natural Ingredients",
       "angle": "Free-from",
-      "primary": "What you leave out matters as much as what you put in. The Ivy Bee is made without sulphates, parabens or silicones — just botanical ivy, honey-derived nutrients and plant actives your hair will actually thank you for.",
+      "primary": "What we leave out matters just as much as what we put in. There are no sulphates, no parabens and no silicones in The Ivy Bee. Just botanical ivy, honey-derived nutrients and plant actives that your hair will genuinely thank you for.",
       "headline": "Clean Hair Care, Done Right",
       "description": "No sulphates. No parabens. No nonsense.",
       "cta": "Learn More"
@@ -61,25 +61,25 @@
       "id": 7,
       "campaign": "Clean & Natural Ingredients",
       "angle": "Read the label",
-      "primary": "Read the back of your shampoo bottle lately? If you can't pronounce half of it, it might be time to switch. The Ivy Bee keeps it simple and botanical — powered by ivy and bee-inspired nourishment, kind to your hair and your scalp.",
+      "primary": "When did you last read the back of your shampoo bottle? If you can't pronounce half the list, it might be time for a change. The Ivy Bee keeps things simple and botanical, powered by ivy and a little inspiration from the bees. Kind to your hair, and kind to your scalp.",
       "headline": "Ingredients You Can Trust",
-      "description": "Botanical care, transparently made.",
+      "description": "Botanical care, made transparently.",
       "cta": "Shop Now"
     },
     {
       "id": 8,
       "campaign": "Clean & Natural Ingredients",
       "angle": "Powered by nature",
-      "primary": "Nature does it better. We blend ivy extract and honey-derived nutrients into every bottle to gently cleanse, deeply nourish and bring back your hair's natural shine — no harsh chemicals required.",
+      "primary": "Honestly, nature just does it better. We blend ivy extract and honey-derived nutrients into every bottle to gently cleanse, deeply nourish and bring your hair's natural shine back to life. No harsh chemicals needed.",
       "headline": "Powered By Nature",
-      "description": "Ivy & honey-inspired hair care.",
+      "description": "Ivy and honey-inspired hair care.",
       "cta": "Shop Now"
     },
     {
       "id": 9,
       "campaign": "Clean & Natural Ingredients",
       "angle": "Sensitive scalp",
-      "primary": "Sensitive scalp? Gentle enough for everyday use, The Ivy Bee skips the irritating sulphates and replaces them with soothing botanicals. Cleanses beautifully without stripping — your scalp stays calm, your hair stays soft.",
+      "primary": "If your scalp tends to get a bit sensitive, this one's for you. The Ivy Bee skips the irritating sulphates and swaps in soothing botanicals instead. It cleanses beautifully without stripping, so your scalp stays calm and your hair stays soft. Gentle enough for every single day.",
       "headline": "Gentle Enough For Every Day",
       "description": "Soothing, sulphate-free, scalp-kind.",
       "cta": "Shop Now"
@@ -88,7 +88,7 @@
       "id": 10,
       "campaign": "Clean & Natural Ingredients",
       "angle": "Clean beauty crossover",
-      "primary": "Your skincare is clean. Why isn't your hair care? Treat your hair to the same standard with The Ivy Bee — botanical, thoughtfully formulated and free from the harsh stuff. Premium care, naturally.",
+      "primary": "Your skincare is clean, so why settle for less from your hair care? Give your hair the same standard you give your skin. The Ivy Bee is botanical, thoughtfully made and free from all the harsh stuff. Premium care, the natural way.",
       "headline": "Clean Beauty For Your Hair",
       "description": "The botanical upgrade your routine needs.",
       "cta": "Learn More"
@@ -97,7 +97,7 @@
       "id": 11,
       "campaign": "Luxury Self-Care Ritual",
       "angle": "Time for you",
-      "primary": "You give everyone else your time. Ten minutes in the shower with The Ivy Bee is for you. A rich botanical lather, a calming natural scent, and hair that feels indulgently soft. Turn wash day into a ritual you look forward to.",
+      "primary": "You spend all day giving your time to everyone else. These ten minutes in the shower are just for you. A rich botanical lather, a calming natural scent, and hair that feels wonderfully soft afterwards. Turn wash day into something you actually look forward to.",
       "headline": "Make Wash Day A Ritual",
       "description": "A little luxury, every single day.",
       "cta": "Shop Now"
@@ -106,7 +106,7 @@
       "id": 12,
       "campaign": "Luxury Self-Care Ritual",
       "angle": "Everyday luxury",
-      "primary": "Some days self-care is a full spa. Other days it's a beautiful bottle of shampoo that makes the shower feel like one. The Ivy Bee brings quiet luxury to your everyday routine — because you deserve it.",
+      "primary": "Some days self-care means a full spa. Other days it's simply a beautiful bottle of shampoo that makes your shower feel like one. The Ivy Bee brings a little quiet luxury to your everyday routine, because you deserve it.",
       "headline": "Everyday Luxury, Bottled",
       "description": "Premium botanical hair care.",
       "cta": "Shop Now"
@@ -115,7 +115,7 @@
       "id": 13,
       "campaign": "Luxury Self-Care Ritual",
       "angle": "Beautiful on display",
-      "primary": "The amber glass. The botanical scent. The way your hair feels after. The Ivy Bee isn't just hair care — it's the most indulgent five minutes of your day. Treat yourself to the ritual.",
+      "primary": "The amber glass. The soft botanical scent. The way your hair feels afterwards. The Ivy Bee isn't just hair care, it's the most indulgent five minutes of your day. Go ahead and treat yourself.",
       "headline": "Beauty You'll Want On Display",
       "description": "Luxury that looks as good as it feels.",
       "cta": "Shop Now"
@@ -124,61 +124,61 @@
       "id": 14,
       "campaign": "Luxury Self-Care Ritual",
       "angle": "Moment of calm",
-      "primary": "Close your eyes. Breathe in. The natural botanical scent of The Ivy Bee turns an ordinary shower into a moment of calm — and leaves your hair soft, shiny and beautifully fragrant long after.",
+      "primary": "Close your eyes. Take a deep breath in. The natural botanical scent of The Ivy Bee turns an everyday shower into a real moment of calm, and leaves your hair soft, shiny and beautifully fragrant long after you've stepped out.",
       "headline": "A Moment Just For You",
-      "description": "Calm your mind. Nourish your hair.",
+      "description": "Calm your mind, nourish your hair.",
       "cta": "Shop Now"
     },
     {
       "id": 15,
       "campaign": "Luxury Self-Care Ritual",
       "angle": "At-home spa",
-      "primary": "You've earned a little indulgence. The Ivy Bee's three-step ritual — cleanse, condition, treat — transforms wash day into the kind of pampering you'd happily pay salon prices for. Now it lives in your bathroom.",
+      "primary": "You've earned a bit of indulgence. The Ivy Bee's three-step ritual of cleanse, condition and treat turns wash day into the kind of pampering you'd happily pay salon prices for. Now it just lives in your bathroom.",
       "headline": "The At-Home Spa Ritual",
       "description": "Salon-worthy pampering, every wash.",
       "cta": "Shop Now"
     },
     {
       "id": 16,
-      "campaign": "Age Confidence (28–60)",
+      "campaign": "Age Confidence (28-60)",
       "angle": "Hair changes with age",
-      "primary": "Your hair changes in your 30s, 40s and beyond — and it deserves care that keeps up. The Ivy Bee is formulated to restore moisture, strength and shine to hair that's been through life. Because gorgeous hair has no age limit.",
+      "primary": "Your hair changes through your 30s, 40s and beyond, and it deserves care that keeps up. The Ivy Bee is made to bring back moisture, strength and shine to hair that's been through a bit of life. Because gorgeous hair really has no age limit.",
       "headline": "Care That Keeps Up With You",
       "description": "For hair at every stage of life.",
       "cta": "Shop Now"
     },
     {
       "id": 17,
-      "campaign": "Age Confidence (28–60)",
+      "campaign": "Age Confidence (28-60)",
       "angle": "Hormonal change",
-      "primary": "Hormonal shifts, colour, the years — they all show up in your hair. The Ivy Bee helps bring back the softness and body you remember, with botanical nourishment made for hair that's lived a little. Feel like you again.",
+      "primary": "Hormones, colour, the passing years. They all tend to show up in your hair eventually. The Ivy Bee helps bring back the softness and body you remember, with botanical nourishment made for hair that's lived a little. Feel like yourself again.",
       "headline": "Bring Back Your Best Hair",
       "description": "Botanical care for changing hair.",
       "cta": "Shop Now"
     },
     {
       "id": 18,
-      "campaign": "Age Confidence (28–60)",
-      "angle": "Grey & coloured hair",
-      "primary": "Whether you're embracing your greys or covering them, coloured and mature hair needs extra love. The Ivy Bee gently nourishes and protects, keeping your colour vibrant and your hair beautifully soft. Confidence, bottled.",
+      "campaign": "Age Confidence (28-60)",
+      "angle": "Grey and coloured hair",
+      "primary": "Whether you're proudly embracing your greys or topping up the colour, mature and coloured hair needs a bit of extra love. The Ivy Bee gently nourishes and protects, keeping your colour vibrant and your hair beautifully soft. Confidence, bottled.",
       "headline": "Love The Hair You're In",
-      "description": "Gentle care for coloured & grey hair.",
+      "description": "Gentle care for coloured and grey hair.",
       "cta": "Shop Now"
     },
     {
       "id": 19,
-      "campaign": "Age Confidence (28–60)",
-      "angle": "Thinning / dryness",
-      "primary": "Noticing your hair feels thinner or drier than it used to? You're far from alone — and The Ivy Bee was made for exactly this. Strengthening, volumising botanicals help your hair feel fuller and healthier, day after day.",
+      "campaign": "Age Confidence (28-60)",
+      "angle": "Thinning and dryness",
+      "primary": "Noticing your hair feels thinner or drier than it once did? You're far from alone, and this is exactly what we made The Ivy Bee for. Strengthening, volumising botanicals help your hair feel fuller and healthier, day after day.",
       "headline": "Fuller, Healthier Hair",
       "description": "Botanical strength for thinning hair.",
       "cta": "Shop Now"
     },
     {
       "id": 20,
-      "campaign": "Age Confidence (28–60)",
+      "campaign": "Age Confidence (28-60)",
       "angle": "No age limit",
-      "primary": "Great hair doesn't retire. The Ivy Bee delivers the moisture, shine and strength mature hair craves — so you can keep turning heads at 30, 50 and every year after. Try the range women your age are switching to.",
+      "primary": "Great hair doesn't retire. The Ivy Bee gives mature hair the moisture, shine and strength it craves, so you can keep turning heads at 30, at 50, and every year after. Come and try the range women your age are quietly switching to.",
       "headline": "Gorgeous Hair, No Age Limit",
       "description": "Premium care, made for you.",
       "cta": "Shop Now"
@@ -187,17 +187,17 @@
       "id": 21,
       "campaign": "Social Proof & Reviews",
       "angle": "Forever shampoo",
-      "primary": "\"I've finally found my forever shampoo.\" We hear it again and again. Women are switching to The Ivy Bee and not looking back — softer, shinier, healthier hair after just a few washes. See what the fuss is about.",
+      "primary": "\"I've finally found my forever shampoo.\" We hear it over and over. Women are switching to The Ivy Bee and not looking back. Softer, shinier, healthier hair after just a few washes. Come and see what all the fuss is about.",
       "headline": "Women Are Switching To This",
-      "description": "Join thousands who made the change.",
+      "description": "Join the thousands who made the change.",
       "cta": "Shop Now"
     },
     {
       "id": 22,
       "campaign": "Social Proof & Reviews",
       "angle": "5-star review",
-      "primary": "★★★★★ \"My hair hasn't felt this soft in years. The scent is divine and a little goes a long way.\" Real words from real women who tried The Ivy Bee. Ready to write your own review?",
-      "headline": "Reviewed & Loved",
+      "primary": "\"My hair hasn't felt this soft in years. The scent is gorgeous and a little goes such a long way.\" Those are real words from real women who gave The Ivy Bee a go. Fancy writing your own review next?",
+      "headline": "Reviewed And Loved",
       "description": "5-star botanical hair care.",
       "cta": "Shop Now"
     },
@@ -205,16 +205,16 @@
       "id": 23,
       "campaign": "Social Proof & Reviews",
       "angle": "Sells out",
-      "primary": "Sold out twice. Back in stock now. The Ivy Bee has become the hair care women can't stop recommending to their friends — and once you feel the difference, you'll understand why.",
+      "primary": "Sold out twice already, and it's back in stock right now. The Ivy Bee has quietly become the hair care women can't stop telling their friends about. Once you feel the difference for yourself, you'll understand why.",
       "headline": "The Hair Care Everyone's Talking About",
-      "description": "Back in stock — for now.",
+      "description": "Back in stock, for now.",
       "cta": "Shop Now"
     },
     {
       "id": 24,
       "campaign": "Social Proof & Reviews",
       "angle": "Whim to holy grail",
-      "primary": "\"I bought it on a whim and now I'm on my third bottle.\" Sometimes the gamble pays off. Thousands of women have made The Ivy Bee their everyday ritual. Take the chance — your hair will thank you.",
+      "primary": "\"I bought it on a whim, and now I'm on my third bottle.\" Sometimes a little gamble really pays off. Thousands of women have made The Ivy Bee part of their everyday ritual. Take the chance. Your hair will thank you for it.",
       "headline": "From Whim To Holy Grail",
       "description": "Loved by women everywhere.",
       "cta": "Shop Now"
@@ -223,7 +223,7 @@
       "id": 25,
       "campaign": "Social Proof & Reviews",
       "angle": "Compliments",
-      "primary": "When your hairdresser asks what you've been using... that's when you know. The Ivy Bee gets noticed — softer, shinier, healthier hair that turns heads. Find out what all the compliments are about.",
+      "primary": "You know you're onto something when your hairdresser asks what you've been using. The Ivy Bee gets noticed. Softer, shinier, healthier hair that turns heads. Come and find out what all the compliments are about.",
       "headline": "Hair That Gets Compliments",
       "description": "Try the range women rave about.",
       "cta": "Shop Now"
@@ -232,7 +232,7 @@
       "id": 26,
       "campaign": "Brand & Founder Story",
       "angle": "Why we started",
-      "primary": "We started The Ivy Bee with one belief: everyday hair care should feel like a treat, not a compromise. No harsh chemicals, no cutting corners — just beautifully crafted botanical formulas made in small batches with real care. This is hair care, reimagined.",
+      "primary": "We started The Ivy Bee with one simple belief. Your everyday hair care should feel like a treat, not a compromise. No harsh chemicals, no cutting corners. Just beautifully made botanical formulas, mixed in small batches with a lot of care. Hair care the way it should be.",
       "headline": "Made With Real Care",
       "description": "Small-batch botanical hair care.",
       "cta": "Learn More"
@@ -241,7 +241,7 @@
       "id": 27,
       "campaign": "Brand & Founder Story",
       "angle": "Born from frustration",
-      "primary": "Frustrated by shampoos that promised the world and stripped our hair instead, we made our own. The Ivy Bee is the result — botanical, gentle and genuinely effective. Crafted by people who were tired of settling. Meet your new everyday.",
+      "primary": "We got fed up with shampoos that promised the world and just stripped our hair instead, so we made our own. The Ivy Bee is what came of it. Botanical, gentle and genuinely effective, made by people who were tired of settling. Come and meet your new everyday.",
       "headline": "Born From Frustration, Made With Love",
       "description": "The botanical hair care we always wanted.",
       "cta": "Learn More"
@@ -250,7 +250,7 @@
       "id": 28,
       "campaign": "Brand & Founder Story",
       "angle": "Meaning behind the name",
-      "primary": "Ivy for resilience. The bee for nature's nourishment. Every bottle of The Ivy Bee is inspired by the quiet power of nature — thoughtfully formulated to bring out the healthiest version of your hair. Discover the story behind the brand.",
+      "primary": "Ivy for resilience. The bee for nature's nourishment. Every bottle of The Ivy Bee takes its cue from the quiet power of nature, thoughtfully made to bring out the healthiest version of your hair. Come and hear the story behind it all.",
       "headline": "The Story In Every Bottle",
       "description": "Nature-inspired, thoughtfully made.",
       "cta": "Learn More"
@@ -259,16 +259,16 @@
       "id": 29,
       "campaign": "Brand & Founder Story",
       "angle": "Premium for real women",
-      "primary": "Premium doesn't have to mean pretentious. We made The Ivy Bee to bring salon-quality, botanical hair care to real women's bathrooms — at a price that feels fair and results that feel incredible. Welcome to your new favourite.",
-      "headline": "Premium Hair Care, For Real Women",
-      "description": "Salon quality, beautifully accessible.",
+      "primary": "Premium really doesn't have to mean pretentious. We made The Ivy Bee to bring salon-quality botanical hair care into real women's bathrooms, at a price that feels fair and with results that feel anything but ordinary. Welcome to your new favourite.",
+      "headline": "Premium Hair Care For Real Women",
+      "description": "Salon quality, beautifully affordable.",
       "cta": "Shop Now"
     },
     {
       "id": 30,
       "campaign": "Brand & Founder Story",
       "angle": "Crafted properly",
-      "primary": "Every bottle is crafted in small batches, bottled in eco-friendly amber glass, and made without the nasties. The Ivy Bee is hair care done properly — slowly, thoughtfully, and with you in mind. Try the difference real care makes.",
+      "primary": "Every bottle is mixed in small batches, poured into eco-friendly amber glass and made without any of the nasties. The Ivy Bee is hair care done properly. Slowly, thoughtfully, and with you in mind. Come and feel the difference real care makes.",
       "headline": "Hair Care Done Properly",
       "description": "Crafted in small batches, with care.",
       "cta": "Learn More"
@@ -277,7 +277,7 @@
       "id": 31,
       "campaign": "New Launch & Intro Offer",
       "angle": "Just launched",
-      "primary": "It's here. The Ivy Bee has officially launched — and it's the botanical hair care upgrade you've been waiting for. Be among the first to try Shampoo, Conditioner & Treatment, and discover what healthy hair really feels like.",
+      "primary": "It's finally here. The Ivy Bee has officially launched, and it's the botanical hair care upgrade you've been waiting for. Be one of the first to try the Shampoo, Conditioner and Treatment, and find out what healthy hair really feels like.",
       "headline": "Just Launched: The Ivy Bee",
       "description": "New premium botanical hair care.",
       "cta": "Shop Now"
@@ -286,7 +286,7 @@
       "id": 32,
       "campaign": "New Launch & Intro Offer",
       "angle": "Complete trio",
-      "primary": "New here? Start with the trio. The Ivy Bee Shampoo, Conditioner & Hair Treatment work together to cleanse, nourish and repair — the complete ritual for softer, stronger, shinier hair. First time? You're going to love this.",
+      "primary": "New around here? Start with the trio. Our Shampoo, Conditioner and Hair Treatment work beautifully together to cleanse, nourish and repair. It's the complete ritual for softer, stronger, shinier hair. First time? You're in for a treat.",
       "headline": "Try The Complete Ritual",
       "description": "Shampoo. Condition. Treat. Transform.",
       "cta": "Shop Now"
@@ -295,8 +295,8 @@
       "id": 33,
       "campaign": "New Launch & Intro Offer",
       "angle": "First-order offer",
-      "primary": "First order? Here's a little welcome gift. Treat your hair to The Ivy Bee and see why it's becoming the go-to for women who want clean, premium, results-driven hair care. There's never been a better time to give it a go.",
-      "headline": "New Customer? Save On Your First Order",
+      "primary": "First order with us? Here's a little welcome gift to say hello. Treat your hair to The Ivy Bee and see why it's fast becoming the go-to for women who want clean, premium, results-driven hair care. There's never been a better moment to give it a go.",
+      "headline": "New Here? Save On Your First Order",
       "description": "Your hair upgrade starts here.",
       "cta": "Get Offer"
     },
@@ -304,7 +304,7 @@
       "id": 34,
       "campaign": "New Launch & Intro Offer",
       "angle": "Start with the hero",
-      "primary": "Curious but not ready for the full range? Start with the Shampoo & Restore — the hero product women fall for first. One bottle might just change your wash day forever.",
+      "primary": "Curious, but not quite ready for the full range? Start with the Shampoo & Restore. It's the hero product women fall for first, and one bottle might just change your wash day for good.",
       "headline": "Start With The Hero Product",
       "description": "Meet the shampoo everyone loves.",
       "cta": "Shop Now"
@@ -313,8 +313,8 @@
       "id": 35,
       "campaign": "New Launch & Intro Offer",
       "angle": "Selling fast",
-      "primary": "The product everyone's been asking for is finally here — and the first batch is moving fast. Don't miss your chance to try The Ivy Bee while it's in stock. Premium botanical hair care, ready to ship.",
-      "headline": "New Launch — Selling Fast",
+      "primary": "The product everyone's been asking for is finally here, and that first batch is moving quickly. Don't miss your chance to try The Ivy Bee while it's still in stock. Premium botanical hair care, ready to ship straight to your door.",
+      "headline": "Just Launched, Selling Fast",
       "description": "Get yours before it's gone.",
       "cta": "Shop Now"
     },
@@ -322,16 +322,16 @@
       "id": 36,
       "campaign": "Sustainability & Eco",
       "angle": "Recyclable glass",
-      "primary": "Beautiful for your hair. Kinder to the planet. The Ivy Bee comes in refined, recyclable amber glass — no cheap plastic, no compromise. Premium hair care you can feel good about, inside and out.",
+      "primary": "Lovely for your hair, and kinder to the planet too. The Ivy Bee comes in refined, recyclable amber glass. No cheap plastic, no compromise. It's premium hair care you can feel genuinely good about, inside and out.",
       "headline": "Hair Care That Gives Back",
-      "description": "Recyclable glass. Botanical formulas.",
+      "description": "Recyclable glass, botanical formulas.",
       "cta": "Learn More"
     },
     {
       "id": 37,
       "campaign": "Sustainability & Eco",
       "angle": "Luxury with conscience",
-      "primary": "We believe luxury and responsibility belong together. That's why The Ivy Bee is cruelty-free, bottled in reusable amber glass, and made with botanical ingredients that are kind to your hair and the world around you.",
+      "primary": "We've always believed that luxury and responsibility belong together. That's why The Ivy Bee is cruelty-free, bottled in reusable amber glass and made with botanical ingredients that are kind to your hair and to the world around you.",
       "headline": "Luxury With A Conscience",
       "description": "Cruelty-free, botanical, beautifully made.",
       "cta": "Learn More"
@@ -339,8 +339,8 @@
     {
       "id": 38,
       "campaign": "Sustainability & Eco",
-      "angle": "Refill & reuse",
-      "primary": "Those amber glass bottles aren't just gorgeous on your shelf — they're better for the planet, too. Refill, reuse, repeat. The Ivy Bee is premium hair care designed to last. Make the beautiful switch.",
+      "angle": "Refill and reuse",
+      "primary": "Those amber glass bottles aren't just gorgeous on your shelf, they're better for the planet too. Refill them, reuse them, repeat. The Ivy Bee is premium hair care designed to last. Come and make the beautiful switch.",
       "headline": "Too Beautiful To Throw Away",
       "description": "Sustainable amber glass, by design.",
       "cta": "Shop Now"
@@ -349,8 +349,8 @@
       "id": 39,
       "campaign": "Sustainability & Eco",
       "angle": "Inspired by the bee",
-      "primary": "Inspired by the bee — nature's hardest worker — we're committed to formulas that respect the natural world. Botanical, cruelty-free and thoughtfully packaged. The Ivy Bee proves you don't have to choose between gorgeous hair and a clear conscience.",
-      "headline": "Kind To Hair. Kind To Nature.",
+      "primary": "We take our cue from the bee, nature's hardest worker, which is why we're so committed to formulas that respect the natural world. Botanical, cruelty-free and thoughtfully packaged. With The Ivy Bee you really don't have to choose between gorgeous hair and a clear conscience.",
+      "headline": "Kind To Hair, Kind To Nature",
       "description": "Botanical care, made responsibly.",
       "cta": "Learn More"
     },
@@ -358,7 +358,7 @@
       "id": 40,
       "campaign": "Sustainability & Eco",
       "angle": "Plastic-free shelf",
-      "primary": "Plastic-free bathroom goals start here. The Ivy Bee's recyclable amber glass bottles look stunning and tread lightly — premium, sustainable hair care you'll be proud to display. Upgrade your shelf and your hair.",
+      "primary": "Plastic-free bathroom goals start right here. The Ivy Bee's recyclable amber glass bottles look stunning on the shelf and tread lightly on the planet. It's premium, sustainable hair care you'll actually want to show off. Upgrade your shelf, and your hair.",
       "headline": "Upgrade Your Shelf",
       "description": "Sustainable beauty that looks the part.",
       "cta": "Shop Now"
@@ -367,7 +367,7 @@
       "id": 41,
       "campaign": "Scent & Sensory",
       "angle": "The scent first",
-      "primary": "The first thing you'll notice is the scent. Soft, botanical and never overpowering — The Ivy Bee turns your shower into a sensory escape, and leaves your hair smelling subtly beautiful all day long.",
+      "primary": "The very first thing you'll notice is the scent. Soft, botanical and never over the top. The Ivy Bee turns your shower into a little sensory escape, and leaves your hair smelling subtly beautiful all day long.",
       "headline": "Hair That Smells Incredible",
       "description": "A botanical scent you'll fall for.",
       "cta": "Shop Now"
@@ -376,7 +376,7 @@
       "id": 42,
       "campaign": "Scent & Sensory",
       "angle": "Signature scent",
-      "primary": "Ever had someone lean in just to ask what your hair smells like? With The Ivy Bee, get used to it. A delicate, natural fragrance that lingers gently — your new signature scent might just be your shampoo.",
+      "primary": "Ever had someone lean in just to ask what your hair smells like? With The Ivy Bee, you'll want to get used to it. It's a delicate, natural fragrance that lingers gently all day. Your new signature scent might just turn out to be your shampoo.",
       "headline": "Your New Signature Scent",
       "description": "Subtle, natural, unforgettable.",
       "cta": "Shop Now"
@@ -385,7 +385,7 @@
       "id": 43,
       "campaign": "Scent & Sensory",
       "angle": "Whole experience",
-      "primary": "It's not just clean hair — it's an experience. The rich lather, the calming botanical aroma, the silky finish. The Ivy Bee makes every wash feel like a treat for the senses. Once you try it, plain shampoo just won't do.",
+      "primary": "This isn't just clean hair, it's a whole experience. The rich lather, the calming botanical aroma, that silky finish. The Ivy Bee makes every single wash feel like a treat for the senses. Once you've tried it, plain old shampoo just won't cut it anymore.",
       "headline": "A Treat For Your Senses",
       "description": "Indulgent botanical hair care.",
       "cta": "Shop Now"
@@ -394,7 +394,7 @@
       "id": 44,
       "campaign": "Scent & Sensory",
       "angle": "Wash away the day",
-      "primary": "Soft on your hair, soft on your senses. The Ivy Bee's natural botanical scent transforms an everyday shower into a calming ritual — the little moment of luxury your day's been missing.",
+      "primary": "Soft on your hair, and soft on your senses. The Ivy Bee's natural botanical scent turns an ordinary shower into a calming little ritual. Think of it as the small moment of luxury your day has been missing.",
       "headline": "Wash Away The Day",
       "description": "Calming, botanical, beautiful.",
       "cta": "Shop Now"
@@ -402,17 +402,17 @@
     {
       "id": 45,
       "campaign": "Scent & Sensory",
-      "angle": "Months perfecting scent",
-      "primary": "We spent months perfecting the scent — because hair care should delight every sense, not just leave you clean. The Ivy Bee's signature botanical fragrance is subtle, sophisticated and utterly addictive. Breathe it in.",
-      "headline": "Scent-sational Hair",
-      "description": "A fragrance worth obsessing over.",
+      "angle": "Months perfecting the scent",
+      "primary": "We spent months getting the scent just right, because hair care should delight every sense, not just leave you clean. The Ivy Bee's signature botanical fragrance is subtle, grown-up and, honestly, a little bit addictive. Go on, breathe it in.",
+      "headline": "Scent You'll Obsess Over",
+      "description": "A fragrance worth falling for.",
       "cta": "Shop Now"
     },
     {
       "id": 46,
       "campaign": "Salon Quality & Value",
       "angle": "Salon results at home",
-      "primary": "Salon-soft hair without the salon price tag. The Ivy Bee delivers the smooth, shiny, healthy results you'd expect from a professional treatment — in the comfort of your own shower. Why pay more?",
+      "primary": "Salon-soft hair without the salon price tag, yes please. The Ivy Bee gives you that smooth, shiny, healthy finish you'd expect from a professional treatment, right there in your own shower. So why on earth pay more?",
       "headline": "Salon Results At Home",
       "description": "Professional-quality botanical care.",
       "cta": "Shop Now"
@@ -421,16 +421,16 @@
       "id": 47,
       "campaign": "Salon Quality & Value",
       "angle": "Premium, smart price",
-      "primary": "Think premium hair care has to break the bank? Think again. The Ivy Bee brings botanical, salon-grade formulas to your bathroom for a fraction of what you'd spend at the chair. Treat yourself, smartly.",
+      "primary": "Think premium hair care has to cost the earth? Think again. The Ivy Bee brings botanical, salon-grade formulas into your bathroom for a fraction of what you'd spend in the chair. Treat yourself, and be smart about it.",
       "headline": "Premium Hair, Smart Price",
-      "description": "Luxury that makes sense.",
+      "description": "Luxury that actually makes sense.",
       "cta": "Shop Now"
     },
     {
       "id": 48,
       "campaign": "Salon Quality & Value",
       "angle": "A little goes far",
-      "primary": "A little goes a long way. One pump of The Ivy Bee Shampoo lathers richly and lasts — so your beautiful bottle stretches further than you'd think. Premium quality that's kind to your hair and your wallet.",
+      "primary": "A little really does go a long way. One pump of The Ivy Bee Shampoo lathers up richly and lasts, so that beautiful bottle stretches much further than you'd expect. Premium quality that's kind to your hair and to your wallet.",
       "headline": "Luxury That Lasts",
       "description": "A little goes a long way.",
       "cta": "Shop Now"
@@ -439,7 +439,7 @@
       "id": 49,
       "campaign": "Salon Quality & Value",
       "angle": "Skip the salon",
-      "primary": "Skip the salon, keep the results. The Ivy Bee Hair Treatment gives you that just-left-the-chair softness and shine at home, whenever you want it. Your weekly ritual for gorgeous, healthy hair.",
+      "primary": "Skip the salon, but keep the results. Our Hair Treatment gives you that fresh-from-the-chair softness and shine at home, any time you fancy it. Think of it as your weekly ritual for gorgeous, healthy hair.",
       "headline": "Salon Softness, On Repeat",
       "description": "Weekly treatment, endless shine.",
       "cta": "Shop Now"
@@ -448,7 +448,7 @@
       "id": 50,
       "campaign": "Salon Quality & Value",
       "angle": "Worth the investment",
-      "primary": "Invest in your hair — it's the one thing you never take off. The Ivy Bee's complete ritual is the upgrade that pays you back every single day, in softer, stronger, more beautiful hair. Worth every penny.",
+      "primary": "Invest a little in your hair. It's the one thing you never take off, after all. The Ivy Bee's complete ritual is the upgrade that pays you back every single day, in softer, stronger, more beautiful hair. Worth every penny, we promise.",
       "headline": "The Upgrade Worth Making",
       "description": "Premium botanical hair care.",
       "cta": "Shop Now"
