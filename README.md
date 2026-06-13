@@ -45,7 +45,24 @@ rendering so the SVG output uses them instead of a generic serif:
 bash scripts/setup-fonts.sh
 ```
 
-## Retro poster set (new)
+## Product-hero ad set (recommended)
+
+The main ad line lives in `hero/`: all 50 ads in the product-hero format
+(real product photo on top, forest panel below with a customer-first headline,
+5-star social proof, the strapline, a "Treat your hair" CTA and the bee logo).
+
+- `hero/ad-NN.png` / `.svg` - the 50 finished ads.
+- `hero/index.html` - gallery of all 50.
+- Product photo alternates amber (odd ids) / green (even ids) for A/B testing.
+- Customer-first two-line headlines live in the `HEAD` map in
+  `scripts/build-product-hero.js`; built on `scripts/product-hero.js`.
+
+```bash
+bash scripts/setup-fonts.sh   # once per environment
+npm run hero                  # rebuild the 50 product-hero ads
+```
+
+## Retro poster set
 
 A second, bolder art direction in the **Forest** colourway lives in `posters/`:
 

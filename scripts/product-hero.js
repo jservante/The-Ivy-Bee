@@ -28,7 +28,9 @@ function stars(cx, y, color) {
   return s;
 }
 
-function productHero(imgFile) {
+function productHero(imgFile, opts = {}) {
+  const l1 = opts.l1 || "Your best hair days";
+  const l2 = opts.l2 || "start here.";
   const photoH = 720;
   const data = fs.readFileSync(imgFile).toString("base64");
   const href = "data:image/png;base64," + data;
@@ -40,8 +42,8 @@ function productHero(imgFile) {
   <rect x="0" y="${photoH}" width="${W}" height="6" fill="${C.gold}"/>
   ${stars(540, P + 62, C.goldlt)}
   <text x="540" y="${P + 100}" text-anchor="middle" font-family="${SANS}" font-size="22" letter-spacing="3" fill="${C.goldlt}">LOVED BY CUSTOMERS LIKE YOU</text>
-  <text x="540" y="${P + 182}" text-anchor="middle" font-family="${SERIF}" font-size="62" fill="${C.cream}">Your best hair days</text>
-  <text x="540" y="${P + 252}" text-anchor="middle" font-family="${SERIF}" font-size="62" fill="${C.cream}">start here.</text>
+  <text x="540" y="${P + 182}" text-anchor="middle" font-family="${SERIF}" font-size="62" fill="${C.cream}">${esc(l1)}</text>
+  <text x="540" y="${P + 252}" text-anchor="middle" font-family="${SERIF}" font-size="62" fill="${C.cream}">${esc(l2)}</text>
   <text x="540" y="${P + 320}" text-anchor="middle" font-family="${SERIF}" font-style="italic" font-size="36" fill="${C.gold}">Drawn from nature, made for your hair.</text>
   <rect x="350" y="${P + 366}" width="380" height="78" rx="39" fill="${C.gold}"/>
   <text x="540" y="${P + 417}" text-anchor="middle" font-family="${SANS}" font-weight="bold" font-size="28" letter-spacing="3" fill="${C.ink}">TREAT YOUR HAIR</text>
@@ -50,13 +52,19 @@ function productHero(imgFile) {
 </svg>`;
 }
 
-const out = path.join(ROOT, "iconic");
-fs.mkdirSync(out, { recursive: true });
-(async () => {
-  for (const [name, file] of [["6-product-amber", "assets/product-amber.png"], ["7-product-green", "assets/product-green.png"]]) {
-    const svg = productHero(path.join(ROOT, file));
-    fs.writeFileSync(path.join(out, name + ".svg"), svg);
-    await sharp(Buffer.from(svg)).png().toFile(path.join(out, name + ".png"));
-    console.log("rendered", name);
-  }
-})();
+function esc(s) { return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;"); }
+
+module.exports = { productHero };
+
+if (require.main === module) {
+  const out = path.join(ROOT, "iconic");
+  fs.mkdirSync(out, { recursive: true });
+  (async () => {
+    for (const [name, file] of [["6-product-amber", "assets/product-amber.png"], ["7-product-green", "assets/product-green.png"]]) {
+      const svg = productHero(path.join(ROOT, file));
+      fs.writeFileSync(path.join(out, name + ".svg"), svg);
+      await sharp(Buffer.from(svg)).png().toFile(path.join(out, name + ".png"));
+      console.log("rendered", name);
+    }
+  })();
+}

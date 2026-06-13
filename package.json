@@ -6,6 +6,7 @@
   "scripts": {
     "build": "node scripts/build.js",
     "posters": "node scripts/build-posters.js",
+    "hero": "node scripts/build-product-hero.js",
     "samples": "node scripts/samples.js"
   },
   "optionalDependencies": {
