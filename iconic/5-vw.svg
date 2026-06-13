@@ -5,22 +5,22 @@
         <stop offset="0.5" stop-color="#a4732e"/><stop offset="1" stop-color="#6b441b"/>
       </linearGradient>
     </defs>
-    <rect x="515.52" y="152" width="48.96" height="26" fill="#8a5d27"/>
-    <rect x="509.76" y="132.5" width="60.48" height="28.5" rx="7.800000000000001" fill="#5f3f18"/>
-    <path d="M 468 455.6
-    L 468 200
-    Q 468 170 515.52 180.5
-    L 515.52 170
-    L 564.48 170
-    L 564.48 180.5
-    Q 612 170 612 200
-    L 612 455.6
-    Q 612 470 597.6 470
-    L 482.4 470
-    Q 468 470 468 455.6 Z" fill="url(#amb)"/>
-    <rect x="485.28" y="200" width="11.52" height="216" rx="5.76" fill="#ffffff" opacity="0.15"/>
-    <circle cx="540" cy="209" r="23.04" fill="none" stroke="#e2bd63" stroke-width="2"/>
-    <g transform="translate(540 209) scale(0.4032)" fill="none" stroke="#e2bd63" stroke-linecap="round">
+    <rect x="516.336" y="142.6" width="47.328" height="25.4" fill="#8a5d27"/>
+    <rect x="510.76800000000003" y="123.75" width="58.46399999999999" height="27.55" rx="7.540000000000001" fill="#5f3f18"/>
+    <path d="M 470.4 436.08
+    L 470.4 189
+    Q 470.4 160 516.336 170.15
+    L 516.336 160
+    L 563.664 160
+    L 563.6639999999999 170.15
+    Q 609.5999999999999 160 609.5999999999999 189
+    L 609.5999999999999 436.08
+    Q 609.5999999999999 450 595.68 450
+    L 484.32 450
+    Q 470.4 450 470.4 436.08 Z" fill="url(#amb)"/>
+    <rect x="487.104" y="189" width="11.136" height="208.79999999999998" rx="5.568" fill="#ffffff" opacity="0.15"/>
+    <circle cx="540" cy="197.7" r="22.272" fill="none" stroke="#e2bd63" stroke-width="2"/>
+    <g transform="translate(540 197.7) scale(0.38975999999999994)" fill="none" stroke="#e2bd63" stroke-linecap="round">
     <circle r="40" stroke-width="3"/><circle r="33" stroke-width="1.4"/>
     <ellipse cx="-11" cy="-6" rx="12" ry="6.5" stroke-width="1.6" transform="rotate(-26 -11 -6)"/>
     <ellipse cx="11" cy="-6" rx="12" ry="6.5" stroke-width="1.6" transform="rotate(26 11 -6)"/>
@@ -28,11 +28,12 @@
     <circle cx="0" cy="-10" r="3.4" stroke-width="1.6"/>
     <line x1="-6" y1="2" x2="6" y2="2" stroke-width="1.2"/><line x1="-5" y1="8" x2="5" y2="8" stroke-width="1.2"/>
   </g>
-    <rect x="476.64" y="302" width="126.72" height="108" rx="8" fill="#f3e7c6"/>
-    <text x="540" y="347.36" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="19.98" fill="#1f5a45">The Ivy Bee</text>
-    <line x1="519.7248" y1="361.4" x2="560.2752" y2="361.4" stroke="#c9a24a" stroke-width="2"/>
-    <text x="540" y="384.08" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11.88" letter-spacing="2" fill="#7a6a4a">BOTANICAL</text>
-  </g><text x="120" y="900" font-family="Helvetica, Arial, sans-serif" font-weight="bold" font-size="84" fill="#111">Think small.</text><text x="120" y="1090" font-family="Helvetica, Arial, sans-serif" font-size="26" fill="#222">Our bottle won't turn heads</text><text x="120" y="1128" font-family="Helvetica, Arial, sans-serif" font-size="26" fill="#222">on your bathroom shelf. It's</text><text x="120" y="1166" font-family="Helvetica, Arial, sans-serif" font-size="26" fill="#222">just a bottle. What's inside is</text><text x="120" y="1204" font-family="Helvetica, Arial, sans-serif" font-size="26" fill="#222">the point: botanical shampoo,</text><text x="120" y="1242" font-family="Helvetica, Arial, sans-serif" font-size="26" fill="#222">conditioner and treatment that</text><text x="120" y="1280" font-family="Helvetica, Arial, sans-serif" font-size="26" fill="#222">quietly get on with the job.</text><text x="600" y="1090" font-family="Helvetica, Arial, sans-serif" font-size="26" fill="#222">Fewer harsh ingredients. More</text><text x="600" y="1128" font-family="Helvetica, Arial, sans-serif" font-size="26" fill="#222">of the good stuff. And a price</text><text x="600" y="1166" font-family="Helvetica, Arial, sans-serif" font-size="26" fill="#222">that doesn't pretend luxury</text><text x="600" y="1204" font-family="Helvetica, Arial, sans-serif" font-size="26" fill="#222">has to cost the earth.</text><text x="600" y="1242" font-family="Helvetica, Arial, sans-serif" font-size="26" fill="#222">Some shampoos shout.</text><text x="600" y="1280" font-family="Helvetica, Arial, sans-serif" font-size="26" fill="#222">Ours just works.</text><text x="120" y="1330" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="34" fill="#111">The Ivy Bee.</text><text x="960" y="1330" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="24" letter-spacing="1" fill="#555">Drawn from nature, made for your hair.</text><g transform="translate(960 880) scale(0.55)" fill="none" stroke="#111" stroke-linecap="round">
+    <rect x="478.752" y="287.6" width="122.496" height="104.39999999999999" rx="8" fill="#f3e7c6"/>
+    <text x="540" y="331.44800000000004" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="19.313999999999997" fill="#1f5a45">The Ivy Bee</text>
+    <line x1="520.40064" y1="345.02000000000004" x2="559.59936" y2="345.02000000000004" stroke="#c9a24a" stroke-width="2"/>
+    <text x="540" y="366.944" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11.484" letter-spacing="2" fill="#7a6a4a">BOTANICAL</text>
+  </g><text x="120" y="880" font-family="Helvetica, Arial, sans-serif" font-weight="bold" font-size="84" fill="#111">Think small.</text><text x="122" y="930" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="32" fill="#444">Drawn from nature, made for your hair.</text><text x="120" y="1050" font-family="Helvetica, Arial, sans-serif" font-size="26" fill="#222">Our bottle won't turn heads</text><text x="120" y="1088" font-family="Helvetica, Arial, sans-serif" font-size="26" fill="#222">on your bathroom shelf. It's</text><text x="120" y="1126" font-family="Helvetica, Arial, sans-serif" font-size="26" fill="#222">just a bottle. What's inside is</text><text x="120" y="1164" font-family="Helvetica, Arial, sans-serif" font-size="26" fill="#222">the point: botanical shampoo,</text><text x="120" y="1202" font-family="Helvetica, Arial, sans-serif" font-size="26" fill="#222">conditioner and treatment that</text><text x="120" y="1240" font-family="Helvetica, Arial, sans-serif" font-size="26" fill="#222">quietly get on with the job.</text><text x="600" y="1050" font-family="Helvetica, Arial, sans-serif" font-size="26" fill="#222">Fewer harsh ingredients. More</text><text x="600" y="1088" font-family="Helvetica, Arial, sans-serif" font-size="26" fill="#222">of the good stuff. And a price</text><text x="600" y="1126" font-family="Helvetica, Arial, sans-serif" font-size="26" fill="#222">that doesn't pretend luxury</text><text x="600" y="1164" font-family="Helvetica, Arial, sans-serif" font-size="26" fill="#222">has to cost the earth.</text><text x="600" y="1202" font-family="Helvetica, Arial, sans-serif" font-size="26" fill="#222">Some shampoos shout.</text><text x="600" y="1240" font-family="Helvetica, Arial, sans-serif" font-size="26" fill="#222">Ours just works.</text><text x="120" y="1318" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="34" fill="#111">The Ivy Bee.</text><rect x="678" y="1273" width="280" height="70" rx="35" fill="none" stroke="#111" stroke-width="2"/>
+    <text x="818" y="1317" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-weight="bold" font-size="26" letter-spacing="3" fill="#111">SHOP NOW</text><g transform="translate(960 858) scale(0.52)" fill="none" stroke="#111" stroke-linecap="round">
     <circle r="40" stroke-width="3"/><circle r="33" stroke-width="1.4"/>
     <ellipse cx="-11" cy="-6" rx="12" ry="6.5" stroke-width="1.6" transform="rotate(-26 -11 -6)"/>
     <ellipse cx="11" cy="-6" rx="12" ry="6.5" stroke-width="1.6" transform="rotate(26 11 -6)"/>

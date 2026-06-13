@@ -87,13 +87,21 @@ function frame(bg) {
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}"><rect width="${W}" height="${H}" fill="${bg}"/>`;
 }
 
+// CTA pill. Filled (fill set) or outlined.
+function cta(cx, cy, w, label, { fill = "none", text = C.cream, outline = C.cream } = {}) {
+  const h = 70;
+  return `<rect x="${cx - w / 2}" y="${cy - h / 2}" width="${w}" height="${h}" rx="${h / 2}" fill="${fill}" stroke="${outline}" stroke-width="2"/>
+    <text x="${cx}" y="${cy + 9}" text-anchor="middle" font-family="${SANS}" font-weight="bold" font-size="26" letter-spacing="3" fill="${text}">${esc(label)}</text>`;
+}
+
 // 1. ABSOLUT --------------------------------------------------------------
 function absolut() {
   return frame(C.green) +
-    flatBottle(540, 900, 690, "BOTANICAL") +
-    `<text x="540" y="1110" text-anchor="middle" font-family="${SANS}" font-weight="bold" font-size="74" letter-spacing="8" fill="${C.cream}">ABSOLUT</text>
-     <text x="540" y="1184" text-anchor="middle" font-family="${SANS}" font-weight="bold" font-size="74" letter-spacing="8" fill="${C.cream}">BOTANICAL.</text>
-     <text x="540" y="1258" text-anchor="middle" font-family="${SANS}" font-size="22" letter-spacing="3" fill="${C.goldlt}">${esc(STRAP_BRAND.toUpperCase())}</text></svg>`;
+    flatBottle(540, 880, 660, "BOTANICAL") +
+    `<text x="540" y="1078" text-anchor="middle" font-family="${SANS}" font-weight="bold" font-size="70" letter-spacing="6" fill="${C.cream}">ABSOLUTELY</text>
+     <text x="540" y="1150" text-anchor="middle" font-family="${SANS}" font-weight="bold" font-size="70" letter-spacing="6" fill="${C.cream}">BOTANICAL.</text>
+     <text x="540" y="1216" text-anchor="middle" font-family="${SANS}" font-size="22" letter-spacing="3" fill="${C.goldlt}">${esc(STRAP_BRAND.toUpperCase())}</text>` +
+    cta(540, 1290, 300, "SHOP NOW", { fill: C.gold, text: C.ink, outline: C.gold }) + `</svg>`;
 }
 
 // 2. APPLE THINK DIFFERENT ------------------------------------------------
@@ -102,8 +110,9 @@ function apple() {
     bee(540, 360, 1.7, "#f3f0e8", 1.2) +
     `<text x="540" y="720" text-anchor="middle" font-family="${SERIF}" font-size="118" fill="#f3f0e8">Think</text>
      <text x="540" y="850" text-anchor="middle" font-family="${SERIF}" font-size="118" fill="#f3f0e8">Botanical.</text>` +
-    `<text x="540" y="1210" text-anchor="middle" font-family="${SERIF}" font-style="italic" font-size="40" fill="#8f8a7e">The Ivy Bee</text>
-     <text x="540" y="1262" text-anchor="middle" font-family="${SANS}" font-size="22" letter-spacing="1" fill="#6f6a5f">${esc(STRAP_BRAND)}</text></svg>`;
+    `<text x="540" y="1158" text-anchor="middle" font-family="${SERIF}" font-style="italic" font-size="40" fill="#b8b2a4">The Ivy Bee</text>
+     <text x="540" y="1208" text-anchor="middle" font-family="${SANS}" font-size="22" letter-spacing="1" fill="#7c776c">${esc(STRAP_BRAND)}</text>` +
+    cta(540, 1285, 280, "SHOP NOW", { outline: "#6f6a5f", text: "#e7e2d6" }) + `</svg>`;
 }
 
 // 3. NIKE JUST DO IT ------------------------------------------------------
@@ -111,25 +120,27 @@ function nike() {
   return frame(C.forest) +
     // bee as the "swoosh" hero
     bee(540, 470, 2.7, C.goldlt, 1.25) +
-    `<text x="540" y="900" text-anchor="middle" font-family="${SANS}" font-weight="900" font-size="150" letter-spacing="-2" fill="${C.cream}">Just</text>
-     <text x="540" y="1050" text-anchor="middle" font-family="${SANS}" font-weight="900" font-size="150" letter-spacing="-2" fill="${C.cream}">Wash It.</text>
-     <text x="540" y="1230" text-anchor="middle" font-family="${SERIF}" font-style="italic" font-size="38" fill="${C.goldlt}">${esc(STRAP_PROOF)}</text></svg>`;
+    `<text x="540" y="880" text-anchor="middle" font-family="${SANS}" font-weight="900" font-size="146" letter-spacing="-2" fill="${C.cream}">Simply</text>
+     <text x="540" y="1026" text-anchor="middle" font-family="${SANS}" font-weight="900" font-size="146" letter-spacing="-2" fill="${C.cream}">Wash It.</text>
+     <text x="540" y="1188" text-anchor="middle" font-family="${SERIF}" font-style="italic" font-size="38" fill="${C.goldlt}">${esc(STRAP_PROOF)}</text>` +
+    cta(540, 1268, 300, "SHOP NOW", { fill: C.gold, text: C.ink, outline: C.gold }) + `</svg>`;
 }
 
 // 4. L'OREAL BECAUSE YOU'RE WORTH IT --------------------------------------
 function loreal() {
-  const lines = ["Because", "Your Hair's", "Worth It."];
+  const lines = ["Because", "Your Hair", "Deserves It."];
   let t = "";
   lines.forEach((l, i) => {
-    t += `<text x="540" y="${560 + i * 150}" text-anchor="middle" font-family="${SERIF}" font-size="120" fill="${C.gold}">${l}</text>`;
+    t += `<text x="540" y="${540 + i * 142}" text-anchor="middle" font-family="${SERIF}" font-size="114" fill="${C.gold}">${l}</text>`;
   });
   return frame(C.forest) +
-    bee(540, 250, 1.25, C.gold, 1.1) +
-    `<line x1="380" y1="330" x2="700" y2="330" stroke="${C.gold}" stroke-width="1.5" opacity="0.6"/>` +
+    bee(540, 250, 1.2, C.gold, 1.1) +
+    `<line x1="390" y1="328" x2="690" y2="328" stroke="${C.gold}" stroke-width="1.5" opacity="0.6"/>` +
     t +
-    `<line x1="380" y1="1090" x2="700" y2="1090" stroke="${C.gold}" stroke-width="1.5" opacity="0.6"/>` +
-    `<text x="540" y="1160" text-anchor="middle" font-family="${SANS}" font-size="25" letter-spacing="4" fill="${C.cream}">${esc(STRAP_PROOF.toUpperCase())}</text>` +
-    wordmark(540, 1250, 46, C.gold) + `</svg>`;
+    `<line x1="390" y1="1040" x2="690" y2="1040" stroke="${C.gold}" stroke-width="1.5" opacity="0.6"/>` +
+    `<text x="540" y="1108" text-anchor="middle" font-family="${SANS}" font-size="24" letter-spacing="4" fill="${C.cream}">${esc(STRAP_PROOF.toUpperCase())}</text>` +
+    wordmark(540, 1188, 44, C.gold) +
+    cta(540, 1268, 300, "SHOP NOW", { fill: C.gold, text: C.ink, outline: C.gold }) + `</svg>`;
 }
 
 // 5. VW THINK SMALL -------------------------------------------------------
@@ -151,14 +162,15 @@ function vw() {
     "Ours just works.",
   ];
   const para = (lines, x) => lines.map((l, i) =>
-    `<text x="${x}" y="${1090 + i * 38}" font-family="${SANS}" font-size="26" fill="#222">${esc(l)}</text>`).join("");
+    `<text x="${x}" y="${1050 + i * 38}" font-family="${SANS}" font-size="26" fill="#222">${esc(l)}</text>`).join("");
   return frame("#ffffff") +
-    flatBottle(540, 470, 300, "BOTANICAL") +
-    `<text x="120" y="900" font-family="${SANS}" font-weight="bold" font-size="84" fill="#111">Think small.</text>` +
+    flatBottle(540, 450, 290, "BOTANICAL") +
+    `<text x="120" y="880" font-family="${SANS}" font-weight="bold" font-size="84" fill="#111">Think small.</text>` +
+    `<text x="122" y="930" font-family="${SERIF}" font-style="italic" font-size="32" fill="#444">${esc(STRAP_BRAND)}</text>` +
     para(col1, 120) + para(col2, 600) +
-    `<text x="120" y="1330" font-family="${SERIF}" font-style="italic" font-size="34" fill="#111">The Ivy Bee.</text>` +
-    `<text x="960" y="1330" text-anchor="end" font-family="${SANS}" font-size="24" letter-spacing="1" fill="#555">${esc(STRAP_BRAND)}</text>` +
-    bee(960, 880, 0.55, "#111", 1) + `</svg>`;
+    `<text x="120" y="1318" font-family="${SERIF}" font-style="italic" font-size="34" fill="#111">The Ivy Bee.</text>` +
+    cta(818, 1308, 280, "SHOP NOW", { outline: "#111", text: "#111" }) +
+    bee(960, 858, 0.52, "#111", 1) + `</svg>`;
 }
 
 module.exports = { absolut, apple, nike, loreal, vw };

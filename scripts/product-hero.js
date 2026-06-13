@@ -21,21 +21,31 @@ function bee(cx, cy, s, color) {
     <line x1="-6" y1="2" x2="6" y2="2" stroke-width="1.2"/><line x1="-5" y1="8" x2="5" y2="8" stroke-width="1.2"/></g>`;
 }
 
+function stars(cx, y, color) {
+  const star = (x) => `<path transform="translate(${x} ${y})" d="M0 -13 L3.8 -4 L13 -4 L5.6 2 L8.5 12 L0 6 L-8.5 12 L-5.6 2 L-13 -4 L-3.8 -4 Z" fill="${color}"/>`;
+  let s = "";
+  for (let i = 0; i < 5; i++) s += star(cx - 96 + i * 48);
+  return s;
+}
+
 function productHero(imgFile) {
-  const photoH = 838;
+  const photoH = 720;
   const data = fs.readFileSync(imgFile).toString("base64");
   const href = "data:image/png;base64," + data;
+  const P = photoH; // panel top
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}">
   <rect width="${W}" height="${H}" fill="${C.forest}"/>
   <clipPath id="ph"><rect x="0" y="0" width="${W}" height="${photoH}"/></clipPath>
-  <image href="${href}" x="0" y="0" width="${W}" height="${W}" preserveAspectRatio="xMidYMid slice" clip-path="url(#ph)"/>
+  <image href="${href}" x="0" y="-100" width="${W}" height="${W}" preserveAspectRatio="xMidYMid slice" clip-path="url(#ph)"/>
   <rect x="0" y="${photoH}" width="${W}" height="6" fill="${C.gold}"/>
-  ${bee(540, photoH + 78, 0.78, C.goldlt)}
-  <text x="540" y="${photoH + 178}" text-anchor="middle" font-family="${SERIF}" font-style="italic" font-size="52" fill="${C.cream}">Drawn from nature,</text>
-  <text x="540" y="${photoH + 240}" text-anchor="middle" font-family="${SERIF}" font-style="italic" font-size="52" fill="${C.cream}">made for your hair.</text>
-  <rect x="370" y="${photoH + 300}" width="340" height="76" rx="38" fill="${C.gold}"/>
-  <text x="540" y="${photoH + 349}" text-anchor="middle" font-family="${SANS}" font-weight="bold" font-size="28" letter-spacing="3" fill="${C.ink}">SHOP THE RITUAL</text>
-  <text x="540" y="${photoH + 440}" text-anchor="middle" font-family="${SERIF}" font-style="italic" font-size="40" fill="${C.gold}">The Ivy Bee</text>
+  ${stars(540, P + 62, C.goldlt)}
+  <text x="540" y="${P + 100}" text-anchor="middle" font-family="${SANS}" font-size="22" letter-spacing="3" fill="${C.goldlt}">LOVED BY IVY BEE REGULARS</text>
+  <text x="540" y="${P + 182}" text-anchor="middle" font-family="${SERIF}" font-size="62" fill="${C.cream}">Cleaner ingredients.</text>
+  <text x="540" y="${P + 252}" text-anchor="middle" font-family="${SERIF}" font-size="62" fill="${C.cream}">Better hair days.</text>
+  <text x="540" y="${P + 320}" text-anchor="middle" font-family="${SERIF}" font-style="italic" font-size="36" fill="${C.gold}">Drawn from nature, made for your hair.</text>
+  <rect x="350" y="${P + 366}" width="380" height="78" rx="39" fill="${C.gold}"/>
+  <text x="540" y="${P + 417}" text-anchor="middle" font-family="${SANS}" font-weight="bold" font-size="28" letter-spacing="3" fill="${C.ink}">SHOP THE RITUAL</text>
+  <text x="540" y="${P + 500}" text-anchor="middle" font-family="${SERIF}" font-style="italic" font-size="38" fill="${C.gold}">The Ivy Bee</text>
 </svg>`;
 }
 

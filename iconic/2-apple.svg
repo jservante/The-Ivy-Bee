@@ -6,5 +6,6 @@
     <circle cx="0" cy="-10" r="3.4" stroke-width="1.92"/>
     <line x1="-6" y1="2" x2="6" y2="2" stroke-width="1.44"/><line x1="-5" y1="8" x2="5" y2="8" stroke-width="1.44"/>
   </g><text x="540" y="720" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="118" fill="#f3f0e8">Think</text>
-     <text x="540" y="850" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="118" fill="#f3f0e8">Botanical.</text><text x="540" y="1210" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="40" fill="#8f8a7e">The Ivy Bee</text>
-     <text x="540" y="1262" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="22" letter-spacing="1" fill="#6f6a5f">Drawn from nature, made for your hair.</text></svg>
+     <text x="540" y="850" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="118" fill="#f3f0e8">Botanical.</text><text x="540" y="1158" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="40" fill="#b8b2a4">The Ivy Bee</text>
+     <text x="540" y="1208" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="22" letter-spacing="1" fill="#7c776c">Drawn from nature, made for your hair.</text><rect x="400" y="1250" width="280" height="70" rx="35" fill="none" stroke="#6f6a5f" stroke-width="2"/>
+    <text x="540" y="1294" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-weight="bold" font-size="26" letter-spacing="3" fill="#e7e2d6">SHOP NOW</text></svg>

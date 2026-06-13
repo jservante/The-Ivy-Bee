@@ -5,22 +5,22 @@
         <stop offset="0.5" stop-color="#a4732e"/><stop offset="1" stop-color="#6b441b"/>
       </linearGradient>
     </defs>
-    <rect x="483.696" y="168.6" width="112.608" height="49.4" fill="#8a5d27"/>
-    <rect x="470.448" y="123.75" width="139.10399999999998" height="65.55" rx="17.94" fill="#5f3f18"/>
-    <path d="M 374.4 866.88
-    L 374.4 279
-    Q 374.4 210 483.69599999999997 234.15
-    L 483.696 210
-    L 596.304 210
-    L 596.3039999999999 234.15
-    Q 705.5999999999999 210 705.5999999999999 279
-    L 705.5999999999999 866.88
-    Q 705.5999999999999 900 672.4799999999999 900
-    L 407.52 900
-    Q 374.4 900 374.4 866.88 Z" fill="url(#amb)"/>
-    <rect x="414.144" y="279" width="26.496" height="496.79999999999995" rx="13.248" fill="#ffffff" opacity="0.15"/>
-    <circle cx="540" cy="299.7" r="52.992" fill="none" stroke="#e2bd63" stroke-width="2"/>
-    <g transform="translate(540 299.7) scale(0.92736)" fill="none" stroke="#e2bd63" stroke-linecap="round">
+    <rect x="486.144" y="180.4" width="107.71200000000002" height="47.6" fill="#8a5d27"/>
+    <rect x="473.472" y="137.5" width="133.056" height="62.7" rx="17.16" fill="#5f3f18"/>
+    <path d="M 381.6 848.32
+    L 381.6 286
+    Q 381.6 220 486.144 243.1
+    L 486.144 220
+    L 593.856 220
+    L 593.8560000000001 243.1
+    Q 698.4000000000001 220 698.4000000000001 286
+    L 698.4000000000001 848.32
+    Q 698.4000000000001 880 666.7200000000001 880
+    L 413.28000000000003 880
+    Q 381.6 880 381.6 848.32 Z" fill="url(#amb)"/>
+    <rect x="419.61600000000004" y="286" width="25.344" height="475.2" rx="12.672" fill="#ffffff" opacity="0.15"/>
+    <circle cx="540" cy="305.8" r="50.688" fill="none" stroke="#e2bd63" stroke-width="2"/>
+    <g transform="translate(540 305.8) scale(0.88704)" fill="none" stroke="#e2bd63" stroke-linecap="round">
     <circle r="40" stroke-width="3"/><circle r="33" stroke-width="1.4"/>
     <ellipse cx="-11" cy="-6" rx="12" ry="6.5" stroke-width="1.6" transform="rotate(-26 -11 -6)"/>
     <ellipse cx="11" cy="-6" rx="12" ry="6.5" stroke-width="1.6" transform="rotate(26 11 -6)"/>
@@ -28,10 +28,11 @@
     <circle cx="0" cy="-10" r="3.4" stroke-width="1.6"/>
     <line x1="-6" y1="2" x2="6" y2="2" stroke-width="1.2"/><line x1="-5" y1="8" x2="5" y2="8" stroke-width="1.2"/>
   </g>
-    <rect x="394.272" y="513.5999999999999" width="291.456" height="248.39999999999998" rx="8" fill="#f3e7c6"/>
-    <text x="540" y="617.9279999999999" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="45.95399999999999" fill="#1f5a45">The Ivy Bee</text>
-    <line x1="493.36704" y1="650.2199999999999" x2="586.63296" y2="650.2199999999999" stroke="#c9a24a" stroke-width="2"/>
-    <text x="540" y="702.3839999999999" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="27.323999999999998" letter-spacing="2" fill="#7a6a4a">BOTANICAL</text>
-  </g><text x="540" y="1110" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-weight="bold" font-size="74" letter-spacing="8" fill="#f3e7c6">ABSOLUT</text>
-     <text x="540" y="1184" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-weight="bold" font-size="74" letter-spacing="8" fill="#f3e7c6">BOTANICAL.</text>
-     <text x="540" y="1258" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="22" letter-spacing="3" fill="#e2bd63">DRAWN FROM NATURE, MADE FOR YOUR HAIR.</text></svg>
+    <rect x="400.608" y="510.4" width="278.784" height="237.6" rx="8" fill="#f3e7c6"/>
+    <text x="540" y="610.192" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="43.955999999999996" fill="#1f5a45">The Ivy Bee</text>
+    <line x1="495.39456" y1="641.0799999999999" x2="584.60544" y2="641.0799999999999" stroke="#c9a24a" stroke-width="2"/>
+    <text x="540" y="690.976" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="26.136" letter-spacing="2" fill="#7a6a4a">BOTANICAL</text>
+  </g><text x="540" y="1078" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-weight="bold" font-size="70" letter-spacing="6" fill="#f3e7c6">ABSOLUTELY</text>
+     <text x="540" y="1150" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-weight="bold" font-size="70" letter-spacing="6" fill="#f3e7c6">BOTANICAL.</text>
+     <text x="540" y="1216" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="22" letter-spacing="3" fill="#e2bd63">DRAWN FROM NATURE, MADE FOR YOUR HAIR.</text><rect x="390" y="1255" width="300" height="70" rx="35" fill="#c9a24a" stroke="#c9a24a" stroke-width="2"/>
+    <text x="540" y="1299" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-weight="bold" font-size="26" letter-spacing="3" fill="#15201a">SHOP NOW</text></svg>
