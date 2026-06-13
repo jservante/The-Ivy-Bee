@@ -21,6 +21,10 @@ const C = {
 
 function esc(s) { return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;"); }
 
+// Brand straplines.
+const STRAP_BRAND = "Drawn from nature, made for your hair.";
+const STRAP_PROOF = "Nature, proven at the chair.";
+
 // Monoline bee emblem centred at 0,0 (design radius ~40), scaled.
 function bee(cx, cy, s, color, sw = 1) {
   return `<g transform="translate(${cx} ${cy}) scale(${s})" fill="none" stroke="${color}" stroke-linecap="round">
@@ -89,7 +93,7 @@ function absolut() {
     flatBottle(540, 900, 690, "BOTANICAL") +
     `<text x="540" y="1110" text-anchor="middle" font-family="${SANS}" font-weight="bold" font-size="74" letter-spacing="8" fill="${C.cream}">ABSOLUT</text>
      <text x="540" y="1184" text-anchor="middle" font-family="${SANS}" font-weight="bold" font-size="74" letter-spacing="8" fill="${C.cream}">BOTANICAL.</text>
-     <text x="540" y="1258" text-anchor="middle" font-family="${SANS}" font-size="22" letter-spacing="4" fill="${C.goldlt}">CLEAN HAIR CARE. NOTHING TO HIDE.</text></svg>`;
+     <text x="540" y="1258" text-anchor="middle" font-family="${SANS}" font-size="22" letter-spacing="3" fill="${C.goldlt}">${esc(STRAP_BRAND.toUpperCase())}</text></svg>`;
 }
 
 // 2. APPLE THINK DIFFERENT ------------------------------------------------
@@ -98,7 +102,8 @@ function apple() {
     bee(540, 360, 1.7, "#f3f0e8", 1.2) +
     `<text x="540" y="720" text-anchor="middle" font-family="${SERIF}" font-size="118" fill="#f3f0e8">Think</text>
      <text x="540" y="850" text-anchor="middle" font-family="${SERIF}" font-size="118" fill="#f3f0e8">Botanical.</text>` +
-    `<text x="540" y="1230" text-anchor="middle" font-family="${SERIF}" font-style="italic" font-size="40" fill="#8f8a7e">The Ivy Bee</text></svg>`;
+    `<text x="540" y="1210" text-anchor="middle" font-family="${SERIF}" font-style="italic" font-size="40" fill="#8f8a7e">The Ivy Bee</text>
+     <text x="540" y="1262" text-anchor="middle" font-family="${SANS}" font-size="22" letter-spacing="1" fill="#6f6a5f">${esc(STRAP_BRAND)}</text></svg>`;
 }
 
 // 3. NIKE JUST DO IT ------------------------------------------------------
@@ -108,7 +113,7 @@ function nike() {
     bee(540, 470, 2.7, C.goldlt, 1.25) +
     `<text x="540" y="900" text-anchor="middle" font-family="${SANS}" font-weight="900" font-size="150" letter-spacing="-2" fill="${C.cream}">Just</text>
      <text x="540" y="1050" text-anchor="middle" font-family="${SANS}" font-weight="900" font-size="150" letter-spacing="-2" fill="${C.cream}">Wash It.</text>
-     <text x="540" y="1230" text-anchor="middle" font-family="${SERIF}" font-style="italic" font-size="38" fill="${C.goldlt}">The Ivy Bee · Botanical Hair Care</text></svg>`;
+     <text x="540" y="1230" text-anchor="middle" font-family="${SERIF}" font-style="italic" font-size="38" fill="${C.goldlt}">${esc(STRAP_PROOF)}</text></svg>`;
 }
 
 // 4. L'OREAL BECAUSE YOU'RE WORTH IT --------------------------------------
@@ -123,7 +128,7 @@ function loreal() {
     `<line x1="380" y1="330" x2="700" y2="330" stroke="${C.gold}" stroke-width="1.5" opacity="0.6"/>` +
     t +
     `<line x1="380" y1="1090" x2="700" y2="1090" stroke="${C.gold}" stroke-width="1.5" opacity="0.6"/>` +
-    `<text x="540" y="1160" text-anchor="middle" font-family="${SANS}" font-size="26" letter-spacing="6" fill="${C.cream}">PREMIUM BOTANICAL HAIR CARE</text>` +
+    `<text x="540" y="1160" text-anchor="middle" font-family="${SANS}" font-size="25" letter-spacing="4" fill="${C.cream}">${esc(STRAP_PROOF.toUpperCase())}</text>` +
     wordmark(540, 1250, 46, C.gold) + `</svg>`;
 }
 
@@ -152,7 +157,7 @@ function vw() {
     `<text x="120" y="900" font-family="${SANS}" font-weight="bold" font-size="84" fill="#111">Think small.</text>` +
     para(col1, 120) + para(col2, 600) +
     `<text x="120" y="1330" font-family="${SERIF}" font-style="italic" font-size="34" fill="#111">The Ivy Bee.</text>` +
-    `<text x="960" y="1330" text-anchor="end" font-family="${SANS}" font-size="26" letter-spacing="3" fill="#555">THINK BOTANICAL.</text>` +
+    `<text x="960" y="1330" text-anchor="end" font-family="${SANS}" font-size="24" letter-spacing="1" fill="#555">${esc(STRAP_BRAND)}</text>` +
     bee(960, 880, 0.55, "#111", 1) + `</svg>`;
 }
 
