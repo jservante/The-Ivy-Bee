@@ -1,144 +1,296 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" width="1080" height="1350" role="img" aria-label="Repair Years Of Damage">
   <defs>
-    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#f4ede0"/>
-      <stop offset="1" stop-color="#e7d8bd"/>
+    <radialGradient id="bgGrad" cx="0.5" cy="0.40" r="0.75">
+      <stop offset="0" stop-color="#f1e8d9"/>
+      <stop offset="1" stop-color="#e3d3b8"/>
+    </radialGradient>
+    <linearGradient id="amber" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4f2c0c"/>
+      <stop offset="0.10" stop-color="#7c4716"/>
+      <stop offset="0.26" stop-color="#d99a4e"/>
+      <stop offset="0.40" stop-color="#b06e23"/>
+      <stop offset="0.60" stop-color="#965d1c"/>
+      <stop offset="0.82" stop-color="#6c3e12"/>
+      <stop offset="1" stop-color="#43260a"/>
     </linearGradient>
-    <linearGradient id="amber" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#cf923f"/>
-      <stop offset="0.5" stop-color="#a8631f"/>
-      <stop offset="1" stop-color="#854d18"/>
+    <linearGradient id="chrome" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#9aa0a3"/>
+      <stop offset="0.22" stop-color="#eef1f2"/>
+      <stop offset="0.45" stop-color="#b7bcbf"/>
+      <stop offset="0.70" stop-color="#f3f5f6"/>
+      <stop offset="1" stop-color="#8d9295"/>
     </linearGradient>
-    <linearGradient id="metal" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#d8dcde"/>
-      <stop offset="0.5" stop-color="#aeb2b4"/>
-      <stop offset="1" stop-color="#cfd3d5"/>
+    <linearGradient id="label" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f8f2e4"/>
+      <stop offset="1" stop-color="#ece1cb"/>
     </linearGradient>
-    <radialGradient id="glow" cx="0.5" cy="0.42" r="0.55">
-      <stop offset="0" stop-color="#ffffff" stop-opacity="0.45"/>
-      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    <linearGradient id="reflFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#000000"/>
+    </linearGradient>
+    <mask id="reflMask"><rect x="0" y="810" width="1080" height="540" fill="url(#reflFade)"/></mask>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="7"/></filter>
+    <radialGradient id="vign" cx="0.5" cy="0.45" r="0.75">
+      <stop offset="0.65" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.1"/>
     </radialGradient>
   </defs>
 
   <rect width="1080" height="1350" fill="url(#bgGrad)"/>
-  <ellipse cx="540" cy="470" rx="520" ry="430" fill="url(#glow)"/>
+  <rect width="1080" height="1350" fill="url(#vign)"/>
 
-  <!-- botanical sprigs -->
-  <g transform="translate(120 250) rotate(-35) scale(1.7)" opacity="0.7">
-    <path d="M0 0 C 22 -14 40 -10 52 -34 C 30 -30 22 -42 0 -40 C -22 -42 -30 -30 -52 -34 C -40 -10 -22 -14 0 0 Z" fill="#c9b485"/>
-    <path d="M0 0 L0 -38" stroke="#c9b485" stroke-width="2" opacity="0.5" transform="scale(1.1)"/>
+  <!-- fine frame -->
+  <rect x="38" y="38" width="1004" height="1274" fill="none" stroke="#b48a3e" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- botanical line work -->
+  <g transform="translate(150 290) rotate(-28) scale(1.6)" opacity="0.5" fill="none" stroke="#b48a3e" stroke-width="1.4">
+    <path d="M0 0 C 16 -6 24 -18 22 -40 C 10 -32 6 -40 0 -52 C -6 -40 -10 -32 -22 -40 C -24 -18 -16 -6 0 0 Z"/>
+    <path d="M0 -2 L0 -46" opacity="0.7"/>
+    <path d="M0 -16 L10 -26 M0 -16 L-10 -26 M0 -30 L7 -38 M0 -30 L-7 -38" opacity="0.55"/>
   </g>
-  <g transform="translate(170 320) rotate(20) scale(1.3)" opacity="0.55">
-    <path d="M0 0 C 22 -14 40 -10 52 -34 C 30 -30 22 -42 0 -40 C -22 -42 -30 -30 -52 -34 C -40 -10 -22 -14 0 0 Z" fill="#c9b485"/>
-    <path d="M0 0 L0 -38" stroke="#c9b485" stroke-width="2" opacity="0.5" transform="scale(1.1)"/>
+  <g transform="translate(196 356) rotate(26) scale(1.2)" opacity="0.4" fill="none" stroke="#b48a3e" stroke-width="1.4">
+    <path d="M0 0 C 16 -6 24 -18 22 -40 C 10 -32 6 -40 0 -52 C -6 -40 -10 -32 -22 -40 C -24 -18 -16 -6 0 0 Z"/>
+    <path d="M0 -2 L0 -46" opacity="0.7"/>
+    <path d="M0 -16 L10 -26 M0 -16 L-10 -26 M0 -30 L7 -38 M0 -30 L-7 -38" opacity="0.55"/>
   </g>
-  <g transform="translate(965 300) rotate(145) scale(1.7)" opacity="0.7">
-    <path d="M0 0 C 22 -14 40 -10 52 -34 C 30 -30 22 -42 0 -40 C -22 -42 -30 -30 -52 -34 C -40 -10 -22 -14 0 0 Z" fill="#c9b485"/>
-    <path d="M0 0 L0 -38" stroke="#c9b485" stroke-width="2" opacity="0.5" transform="scale(1.1)"/>
+  <g transform="translate(930 290) rotate(152) scale(1.6)" opacity="0.5" fill="none" stroke="#b48a3e" stroke-width="1.4">
+    <path d="M0 0 C 16 -6 24 -18 22 -40 C 10 -32 6 -40 0 -52 C -6 -40 -10 -32 -22 -40 C -24 -18 -16 -6 0 0 Z"/>
+    <path d="M0 -2 L0 -46" opacity="0.7"/>
+    <path d="M0 -16 L10 -26 M0 -16 L-10 -26 M0 -30 L7 -38 M0 -30 L-7 -38" opacity="0.55"/>
   </g>
-  <g transform="translate(915 360) rotate(200) scale(1.3)" opacity="0.55">
-    <path d="M0 0 C 22 -14 40 -10 52 -34 C 30 -30 22 -42 0 -40 C -22 -42 -30 -30 -52 -34 C -40 -10 -22 -14 0 0 Z" fill="#c9b485"/>
-    <path d="M0 0 L0 -38" stroke="#c9b485" stroke-width="2" opacity="0.5" transform="scale(1.1)"/>
-  </g>
-  <g transform="translate(150 800) rotate(-120) scale(1.5)" opacity="0.5">
-    <path d="M0 0 C 22 -14 40 -10 52 -34 C 30 -30 22 -42 0 -40 C -22 -42 -30 -30 -52 -34 C -40 -10 -22 -14 0 0 Z" fill="#c9b485"/>
-    <path d="M0 0 L0 -38" stroke="#c9b485" stroke-width="2" opacity="0.5" transform="scale(1.1)"/>
-  </g>
-  <g transform="translate(940 800) rotate(120) scale(1.5)" opacity="0.5">
-    <path d="M0 0 C 22 -14 40 -10 52 -34 C 30 -30 22 -42 0 -40 C -22 -42 -30 -30 -52 -34 C -40 -10 -22 -14 0 0 Z" fill="#c9b485"/>
-    <path d="M0 0 L0 -38" stroke="#c9b485" stroke-width="2" opacity="0.5" transform="scale(1.1)"/>
+  <g transform="translate(884 356) rotate(206) scale(1.2)" opacity="0.4" fill="none" stroke="#b48a3e" stroke-width="1.4">
+    <path d="M0 0 C 16 -6 24 -18 22 -40 C 10 -32 6 -40 0 -52 C -6 -40 -10 -32 -22 -40 C -24 -18 -16 -6 0 0 Z"/>
+    <path d="M0 -2 L0 -46" opacity="0.7"/>
+    <path d="M0 -16 L10 -26 M0 -16 L-10 -26 M0 -30 L7 -38 M0 -30 L-7 -38" opacity="0.55"/>
   </g>
 
   <!-- emblem + wordmark -->
-  <g>
-    <circle cx="540" cy="175" r="70" fill="none" stroke="#d9b45f" stroke-width="2.5"/>
-    <circle cx="540" cy="175" r="63" fill="none" stroke="#d9b45f" stroke-width="1"/>
-    <g transform="translate(540 175)">
-      <ellipse cx="-13" cy="-6" rx="15" ry="9" fill="#d9b45f" opacity="0.45" transform="rotate(-28 -13 -6)"/>
-      <ellipse cx="13" cy="-6" rx="15" ry="9" fill="#d9b45f" opacity="0.45" transform="rotate(28 13 -6)"/>
-      <ellipse cx="0" cy="3" rx="9" ry="16" fill="#d9b45f"/>
-      <line x1="-9" y1="-1" x2="9" y2="-1" stroke="#d9b45f" stroke-width="1.4" opacity="0.6"/>
-      <line x1="-8" y1="6" x2="8" y2="6" stroke="#d9b45f" stroke-width="1.4" opacity="0.6"/>
-      <line x1="-3" y1="-15" x2="-7" y2="-23" stroke="#d9b45f" stroke-width="1.6"/>
-      <line x1="3" y1="-15" x2="7" y2="-23" stroke="#d9b45f" stroke-width="1.6"/>
+  <g fill="none" stroke="#b48a3e">
+    <circle cx="540" cy="168" r="62" stroke-width="2"/>
+    <circle cx="540" cy="168" r="56" stroke-width="1"/>
+    <g transform="translate(540 168)">
+      <ellipse cx="-15" cy="-7" rx="16" ry="8.5" stroke-width="1.4" fill="#b48a3e" fill-opacity="0.12" transform="rotate(-26 -15 -7)"/>
+      <ellipse cx="15" cy="-7" rx="16" ry="8.5" stroke-width="1.4" fill="#b48a3e" fill-opacity="0.12" transform="rotate(26 15 -7)"/>
+      <ellipse cx="0" cy="4" rx="8.5" ry="16" stroke-width="1.6"/>
+      <circle cx="0" cy="-13" r="4.5" stroke-width="1.4"/>
+      <line x1="-8" y1="0" x2="8" y2="0" stroke-width="1.2"/>
+      <line x1="-7" y1="8" x2="7" y2="8" stroke-width="1.2"/>
+      <path d="M-2 -17 C -5 -24 -8 -25 -11 -27" stroke-width="1.2"/>
+      <path d="M2 -17 C 5 -24 8 -25 11 -27" stroke-width="1.2"/>
     </g>
   </g>
-  <text x="540" y="305" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="58" fill="#1c4332">The Ivy Bee</text>
-  <text x="540" y="345" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" letter-spacing="6" fill="#d9b45f">PREMIUM BOTANICAL HAIR CARE</text>
+  <text x="540" y="292" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="56" fill="#1c4332">The Ivy Bee</text>
+  <text x="540" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" letter-spacing="7" fill="#b48a3e">PREMIUM BOTANICAL HAIR CARE</text>
 
-  <!-- shelf shadow -->
-  <ellipse cx="540" cy="858" rx="320" ry="26" fill="#000000" opacity="0.10"/>
+  <!-- surface line -->
+  <rect x="120" y="892" width="840" height="2" fill="#b48a3e" opacity="0.18"/>
 
-  <!-- bottle trio: shampoo (tall), conditioner, treatment -->
+  <!-- bottle trio (side bottles, then taller front bottle) -->
   <g>
-    <!-- pump -->
-    <rect x="379" y="412" width="18" height="60" fill="#b9bdbf"/>
-    <rect x="360" y="468" width="56" height="46" rx="6" fill="#c7cbcd"/>
-    <rect x="360" y="468" width="56" height="46" rx="6" fill="url(#metal)"/>
-    <rect x="392" y="416" width="58" height="16" rx="6" fill="#b9bdbf"/>
-    <rect x="440" y="422" width="12" height="22" rx="4" fill="#a9adaf"/>
-    <!-- neck -->
-    <rect x="371" y="496" width="34" height="22" fill="#9c5d22" opacity="0.85"/>
-    <!-- body -->
-    <rect x="313" y="508" width="150" height="342" rx="20" fill="url(#amber)"/>
-    <rect x="323" y="520" width="26" height="312" rx="13" fill="#ffffff" opacity="0.18"/>
+    <!-- contact shadow -->
+    <ellipse cx="388" cy="890" rx="78.75" ry="14" fill="#000000" opacity="0.20" filter="url(#soft)"/>
+
+    <!-- surface reflection -->
+    <g transform="translate(0 1768) scale(1 -1)" opacity="0.30" mask="url(#reflMask)">
+      <path d="M 313 553.5
+    Q 313 540 326.5 540
+    L 449.5 540
+    Q 463 540 463 553.5
+    L 463 867.5
+    Q 463 884 446.5 884
+    L 329.5 884
+    Q 313 884 313 867.5 Z" fill="url(#amber)"/>
+    </g>
+
+    <!-- pump dispenser -->
+    <g>
+      <rect x="376" y="444" width="24" height="74" fill="url(#chrome)"/>
+      <path d="M 397 452 Q 462 440 448 474 L 448 486"
+            fill="none" stroke="url(#chrome)" stroke-width="17" stroke-linecap="round"/>
+      <path d="M 397 449 Q 461 437 446 470"
+            fill="none" stroke="#eef0f1" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+      <rect x="439" y="480" width="18" height="14" rx="3" fill="url(#chrome)"/>
+      <rect x="365.5" y="432" width="45" height="26" rx="9" fill="url(#chrome)"/>
+      <rect x="362.5" y="514" width="51.00000000000001" height="30" rx="5" fill="url(#chrome)"/>
+      <line x1="368.5" y1="519" x2="368.5" y2="539" stroke="#7f8487" stroke-width="1" opacity="0.5"/><line x1="378.25" y1="519" x2="378.25" y2="539" stroke="#7f8487" stroke-width="1" opacity="0.5"/><line x1="388" y1="519" x2="388" y2="539" stroke="#7f8487" stroke-width="1" opacity="0.5"/><line x1="397.75" y1="519" x2="397.75" y2="539" stroke="#7f8487" stroke-width="1" opacity="0.5"/><line x1="407.5" y1="519" x2="407.5" y2="539" stroke="#7f8487" stroke-width="1" opacity="0.5"/>
+    </g>
+
+    <!-- neck glass -->
+    <rect x="364.5" y="526" width="47.00000000000001" height="20" fill="#7a4715"/>
+
+    <!-- glass body -->
+    <path d="M 313 553.5
+    Q 313 540 326.5 540
+    L 449.5 540
+    Q 463 540 463 553.5
+    L 463 867.5
+    Q 463 884 446.5 884
+    L 329.5 884
+    Q 313 884 313 867.5 Z" fill="url(#amber)"/>
+    <path d="M 313 553.5
+    Q 313 540 326.5 540
+    L 449.5 540
+    Q 463 540 463 553.5
+    L 463 867.5
+    Q 463 884 446.5 884
+    L 329.5 884
+    Q 313 884 313 867.5 Z" fill="none" stroke="#3f2208" stroke-opacity="0.25" stroke-width="1.5"/>
+    <!-- top rim -->
+    <ellipse cx="388" cy="543" rx="71" ry="6" fill="#5e360f" opacity="0.55"/>
+    <!-- specular highlight -->
+    <rect x="335.5" y="554" width="15" height="310" rx="7.5" fill="#ffe9c4" opacity="0.55" filter="url(#soft)"/>
+    <rect x="338.5" y="560" width="5.250000000000001" height="284" rx="3" fill="#fff6e6" opacity="0.8"/>
+    <!-- right rim light -->
+    <rect x="450.25" y="562" width="4.5" height="274" rx="3" fill="#ffdca0" opacity="0.35"/>
+
     <!-- label -->
-    <rect x="328" y="654" width="120" height="150" rx="8" fill="#f3ecdb"/>
-    <text x="388" y="684" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#c19a3b">&#10042;</text>
-    <text x="388" y="716" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#1c4332">The Ivy Bee</text>
-    <line x1="354" y1="730" x2="422" y2="730" stroke="#c19a3b" stroke-width="1"/>
-    <text x="388" y="752" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" letter-spacing="2" fill="#6f6a5d">SHAMPOO</text>
-    <text x="388" y="776" text-anchor="middle" font-family="Arial, sans-serif" font-size="8.5" letter-spacing="1.5" fill="#9a9486">BOTANICAL HAIR CARE</text>
+    <rect x="326.5" y="684.04" width="122.99999999999999" height="158.24" rx="7" fill="#000000" opacity="0.12" filter="url(#soft)"/>
+    <rect x="326.5" y="681.04" width="122.99999999999999" height="158.24" rx="7" fill="url(#label)"/>
+    <text x="388" y="719.0176" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.5" fill="#b48a3e">&#10042;</text>
+    <text x="388" y="753.8303999999999" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="20.25" fill="#1c4332">The Ivy Bee</text>
+    <line x1="360.94" y1="766.4896" x2="415.06" y2="766.4896" stroke="#b48a3e" stroke-width="1"/>
+    <text x="388" y="791.808" text-anchor="middle" font-family="Arial, sans-serif" font-size="10.95" letter-spacing="1.8" fill="#6f6a5d">SHAMPOO</text>
+    <text x="388" y="815.544" text-anchor="middle" font-family="Arial, sans-serif" font-size="7.5" letter-spacing="1.05" fill="#9a9486">BOTANICAL HAIR CARE</text>
   </g>
   <g>
-    <!-- pump -->
-    <rect x="683" y="412" width="18" height="60" fill="#b9bdbf"/>
-    <rect x="664" y="468" width="56" height="46" rx="6" fill="#c7cbcd"/>
-    <rect x="664" y="468" width="56" height="46" rx="6" fill="url(#metal)"/>
-    <rect x="696" y="416" width="58" height="16" rx="6" fill="#b9bdbf"/>
-    <rect x="744" y="422" width="12" height="22" rx="4" fill="#a9adaf"/>
-    <!-- neck -->
-    <rect x="675" y="496" width="34" height="22" fill="#9c5d22" opacity="0.85"/>
-    <!-- body -->
-    <rect x="617" y="508" width="150" height="342" rx="20" fill="url(#amber)"/>
-    <rect x="627" y="520" width="26" height="312" rx="13" fill="#ffffff" opacity="0.18"/>
+    <!-- contact shadow -->
+    <ellipse cx="692" cy="890" rx="78.75" ry="14" fill="#000000" opacity="0.20" filter="url(#soft)"/>
+
+    <!-- surface reflection -->
+    <g transform="translate(0 1768) scale(1 -1)" opacity="0.30" mask="url(#reflMask)">
+      <path d="M 617 553.5
+    Q 617 540 630.5 540
+    L 753.5 540
+    Q 767 540 767 553.5
+    L 767 867.5
+    Q 767 884 750.5 884
+    L 633.5 884
+    Q 617 884 617 867.5 Z" fill="url(#amber)"/>
+    </g>
+
+    <!-- pump dispenser -->
+    <g>
+      <rect x="680" y="444" width="24" height="74" fill="url(#chrome)"/>
+      <path d="M 701 452 Q 766 440 752 474 L 752 486"
+            fill="none" stroke="url(#chrome)" stroke-width="17" stroke-linecap="round"/>
+      <path d="M 701 449 Q 765 437 750 470"
+            fill="none" stroke="#eef0f1" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+      <rect x="743" y="480" width="18" height="14" rx="3" fill="url(#chrome)"/>
+      <rect x="669.5" y="432" width="45" height="26" rx="9" fill="url(#chrome)"/>
+      <rect x="666.5" y="514" width="51.00000000000001" height="30" rx="5" fill="url(#chrome)"/>
+      <line x1="672.5" y1="519" x2="672.5" y2="539" stroke="#7f8487" stroke-width="1" opacity="0.5"/><line x1="682.25" y1="519" x2="682.25" y2="539" stroke="#7f8487" stroke-width="1" opacity="0.5"/><line x1="692" y1="519" x2="692" y2="539" stroke="#7f8487" stroke-width="1" opacity="0.5"/><line x1="701.75" y1="519" x2="701.75" y2="539" stroke="#7f8487" stroke-width="1" opacity="0.5"/><line x1="711.5" y1="519" x2="711.5" y2="539" stroke="#7f8487" stroke-width="1" opacity="0.5"/>
+    </g>
+
+    <!-- neck glass -->
+    <rect x="668.5" y="526" width="47.00000000000001" height="20" fill="#7a4715"/>
+
+    <!-- glass body -->
+    <path d="M 617 553.5
+    Q 617 540 630.5 540
+    L 753.5 540
+    Q 767 540 767 553.5
+    L 767 867.5
+    Q 767 884 750.5 884
+    L 633.5 884
+    Q 617 884 617 867.5 Z" fill="url(#amber)"/>
+    <path d="M 617 553.5
+    Q 617 540 630.5 540
+    L 753.5 540
+    Q 767 540 767 553.5
+    L 767 867.5
+    Q 767 884 750.5 884
+    L 633.5 884
+    Q 617 884 617 867.5 Z" fill="none" stroke="#3f2208" stroke-opacity="0.25" stroke-width="1.5"/>
+    <!-- top rim -->
+    <ellipse cx="692" cy="543" rx="71" ry="6" fill="#5e360f" opacity="0.55"/>
+    <!-- specular highlight -->
+    <rect x="639.5" y="554" width="15" height="310" rx="7.5" fill="#ffe9c4" opacity="0.55" filter="url(#soft)"/>
+    <rect x="642.5" y="560" width="5.250000000000001" height="284" rx="3" fill="#fff6e6" opacity="0.8"/>
+    <!-- right rim light -->
+    <rect x="754.25" y="562" width="4.5" height="274" rx="3" fill="#ffdca0" opacity="0.35"/>
+
     <!-- label -->
-    <rect x="632" y="654" width="120" height="150" rx="8" fill="#f3ecdb"/>
-    <text x="692" y="684" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#c19a3b">&#10042;</text>
-    <text x="692" y="716" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#1c4332">The Ivy Bee</text>
-    <line x1="658" y1="730" x2="726" y2="730" stroke="#c19a3b" stroke-width="1"/>
-    <text x="692" y="752" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" letter-spacing="2" fill="#6f6a5d">TREATMENT</text>
-    <text x="692" y="776" text-anchor="middle" font-family="Arial, sans-serif" font-size="8.5" letter-spacing="1.5" fill="#9a9486">BOTANICAL HAIR CARE</text>
+    <rect x="630.5" y="684.04" width="122.99999999999999" height="158.24" rx="7" fill="#000000" opacity="0.12" filter="url(#soft)"/>
+    <rect x="630.5" y="681.04" width="122.99999999999999" height="158.24" rx="7" fill="url(#label)"/>
+    <text x="692" y="719.0176" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.5" fill="#b48a3e">&#10042;</text>
+    <text x="692" y="753.8303999999999" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="20.25" fill="#1c4332">The Ivy Bee</text>
+    <line x1="664.94" y1="766.4896" x2="719.06" y2="766.4896" stroke="#b48a3e" stroke-width="1"/>
+    <text x="692" y="791.808" text-anchor="middle" font-family="Arial, sans-serif" font-size="10.95" letter-spacing="1.8" fill="#6f6a5d">TREATMENT</text>
+    <text x="692" y="815.544" text-anchor="middle" font-family="Arial, sans-serif" font-size="7.5" letter-spacing="1.05" fill="#9a9486">BOTANICAL HAIR CARE</text>
   </g>
   <g>
-    <!-- pump -->
-    <rect x="531" y="372" width="18" height="60" fill="#b9bdbf"/>
-    <rect x="512" y="428" width="56" height="46" rx="6" fill="#c7cbcd"/>
-    <rect x="512" y="428" width="56" height="46" rx="6" fill="url(#metal)"/>
-    <rect x="544" y="376" width="58" height="16" rx="6" fill="#b9bdbf"/>
-    <rect x="592" y="382" width="12" height="22" rx="4" fill="#a9adaf"/>
-    <!-- neck -->
-    <rect x="523" y="456" width="34" height="22" fill="#9c5d22" opacity="0.85"/>
-    <!-- body -->
-    <rect x="465" y="468" width="150" height="382" rx="20" fill="url(#amber)"/>
-    <rect x="475" y="480" width="26" height="352" rx="13" fill="#ffffff" opacity="0.18"/>
+    <!-- contact shadow -->
+    <ellipse cx="540" cy="890" rx="88.2" ry="14" fill="#000000" opacity="0.20" filter="url(#soft)"/>
+
+    <!-- surface reflection -->
+    <g transform="translate(0 1768) scale(1 -1)" opacity="0.30" mask="url(#reflMask)">
+      <path d="M 456 515.12
+    Q 456 500 471.12 500
+    L 608.88 500
+    Q 624 500 624 515.12
+    L 624 865.52
+    Q 624 884 605.52 884
+    L 474.48 884
+    Q 456 884 456 865.52 Z" fill="url(#amber)"/>
+    </g>
+
+    <!-- pump dispenser -->
+    <g>
+      <rect x="526.56" y="404" width="26.88" height="74" fill="url(#chrome)"/>
+      <path d="M 550.08 412 Q 621.2 400 607.2 434 L 607.2 446"
+            fill="none" stroke="url(#chrome)" stroke-width="17" stroke-linecap="round"/>
+      <path d="M 550.08 409 Q 620.2 397 605.2 430"
+            fill="none" stroke="#eef0f1" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+      <rect x="598.2" y="440" width="18" height="14" rx="3" fill="url(#chrome)"/>
+      <rect x="514.8" y="392" width="50.4" height="26" rx="9" fill="url(#chrome)"/>
+      <rect x="511.44" y="474" width="57.120000000000005" height="30" rx="5" fill="url(#chrome)"/>
+      <line x1="517.44" y1="479" x2="517.44" y2="499" stroke="#7f8487" stroke-width="1" opacity="0.5"/><line x1="528.72" y1="479" x2="528.72" y2="499" stroke="#7f8487" stroke-width="1" opacity="0.5"/><line x1="540" y1="479" x2="540" y2="499" stroke="#7f8487" stroke-width="1" opacity="0.5"/><line x1="551.2800000000001" y1="479" x2="551.2800000000001" y2="499" stroke="#7f8487" stroke-width="1" opacity="0.5"/><line x1="562.5600000000001" y1="479" x2="562.5600000000001" y2="499" stroke="#7f8487" stroke-width="1" opacity="0.5"/>
+    </g>
+
+    <!-- neck glass -->
+    <rect x="513.44" y="486" width="53.120000000000005" height="20" fill="#7a4715"/>
+
+    <!-- glass body -->
+    <path d="M 456 515.12
+    Q 456 500 471.12 500
+    L 608.88 500
+    Q 624 500 624 515.12
+    L 624 865.52
+    Q 624 884 605.52 884
+    L 474.48 884
+    Q 456 884 456 865.52 Z" fill="url(#amber)"/>
+    <path d="M 456 515.12
+    Q 456 500 471.12 500
+    L 608.88 500
+    Q 624 500 624 515.12
+    L 624 865.52
+    Q 624 884 605.52 884
+    L 474.48 884
+    Q 456 884 456 865.52 Z" fill="none" stroke="#3f2208" stroke-opacity="0.25" stroke-width="1.5"/>
+    <!-- top rim -->
+    <ellipse cx="540" cy="503" rx="80" ry="6" fill="#5e360f" opacity="0.55"/>
+    <!-- specular highlight -->
+    <rect x="481.2" y="514" width="16.8" height="350" rx="8.4" fill="#ffe9c4" opacity="0.55" filter="url(#soft)"/>
+    <rect x="484.56" y="520" width="5.880000000000001" height="324" rx="3" fill="#fff6e6" opacity="0.8"/>
+    <!-- right rim light -->
+    <rect x="609.72" y="522" width="5.04" height="314" rx="3" fill="#ffdca0" opacity="0.35"/>
+
     <!-- label -->
-    <rect x="480" y="654" width="120" height="150" rx="8" fill="#f3ecdb"/>
-    <text x="540" y="684" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#c19a3b">&#10042;</text>
-    <text x="540" y="716" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#1c4332">The Ivy Bee</text>
-    <line x1="506" y1="730" x2="574" y2="730" stroke="#c19a3b" stroke-width="1"/>
-    <text x="540" y="752" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" letter-spacing="2" fill="#6f6a5d">CONDITIONER</text>
-    <text x="540" y="776" text-anchor="middle" font-family="Arial, sans-serif" font-size="8.5" letter-spacing="1.5" fill="#9a9486">BOTANICAL HAIR CARE</text>
+    <rect x="471.12" y="660.44" width="137.76" height="176.64000000000001" rx="7" fill="#000000" opacity="0.12" filter="url(#soft)"/>
+    <rect x="471.12" y="657.44" width="137.76" height="176.64000000000001" rx="7" fill="url(#label)"/>
+    <text x="540" y="699.8336" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18.48" fill="#b48a3e">&#10042;</text>
+    <text x="540" y="738.6944000000001" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22.68" fill="#1c4332">The Ivy Bee</text>
+    <line x1="509.6928" y1="752.8256000000001" x2="570.3072" y2="752.8256000000001" stroke="#b48a3e" stroke-width="1"/>
+    <text x="540" y="781.0880000000001" text-anchor="middle" font-family="Arial, sans-serif" font-size="12.264" letter-spacing="2.016" fill="#6f6a5d">CONDITIONER</text>
+    <text x="540" y="807.5840000000001" text-anchor="middle" font-family="Arial, sans-serif" font-size="8.4" letter-spacing="1.176" fill="#9a9486">BOTANICAL HAIR CARE</text>
   </g>
 
-  <!-- copy band -->
-  <rect x="0" y="905" width="1080" height="445" fill="#1c4332"/>
-  <text x="540" y="971" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" letter-spacing="4" fill="#d9c7a0">THEIVYBEE.COM</text>
-  <line x1="506" y1="993" x2="574" y2="993" stroke="#d9b45f" stroke-width="2"/>
-  <text x="540" y="1055" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="60" font-weight="bold" fill="#ffffff"><tspan x="540" dy="0">Repair Years Of Damage</tspan></text>
-  <text x="540" y="1109" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" fill="#d9c7a0"><tspan x="540" dy="0">Botanical hair care that restores.</tspan></text>
+  <!-- copy -->
+  <line x1="504" y1="1012" x2="576" y2="1012" stroke="#b48a3e" stroke-width="2"/>
+  <text x="540" y="1070" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="64" fill="#1c4332"><tspan x="540" dy="0">Repair Years Of</tspan><tspan x="540" dy="74">Damage</tspan></text>
+  <text x="540" y="1192" text-anchor="middle" font-family="Arial, sans-serif" font-size="25" letter-spacing="0.5" fill="#857b67"><tspan x="540" dy="0">Botanical hair care that restores.</tspan></text>
   <g>
-    <rect x="430" y="1151" width="220" height="64" rx="32" fill="#d9b45f"/>
-    <text x="540" y="1192" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" font-weight="bold" letter-spacing="1" fill="#1c4332">Shop Now</text>
+    <rect x="425" y="1232" width="230" height="66" rx="33" fill="#1c4332"/>
+    <text x="540" y="1274" text-anchor="middle" font-family="Arial, sans-serif" font-size="25" font-weight="bold" letter-spacing="1.5" fill="#f6f1e6">Shop Now</text>
   </g>
 </svg>
