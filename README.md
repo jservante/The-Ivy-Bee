@@ -35,6 +35,16 @@ Each ad includes the fields Facebook asks for:
 - **Full gallery:** open `index.html` in any browser to see all 50 creatives
   laid out with their copy.
 
+## Fonts
+
+Premium typefaces (Playfair Display, Cormorant Garamond, Jost — all OFL) are
+bundled in `fonts/`. In a fresh environment, register them once before
+rendering so the SVG output uses them instead of a generic serif:
+
+```bash
+bash scripts/setup-fonts.sh
+```
+
 ## Retro poster set (new)
 
 A second, bolder art direction in the **Forest** colourway lives in `posters/`:

@@ -7,8 +7,8 @@ const path = require("path");
 const sharp = require("sharp");
 
 const W = 1080, H = 1350;
-const SERIF = "Georgia, 'Times New Roman', serif";
-const SANS = "Helvetica, Arial, sans-serif";
+const SERIF = "Playfair Display, Georgia, serif";
+const SANS = "Jost, Helvetica, Arial, sans-serif";
 const C = { forest: "#143528", cream: "#f3e7c6", gold: "#c9a24a", goldlt: "#e2bd63", ink: "#15201a" };
 const ROOT = path.resolve(__dirname, "..");
 
