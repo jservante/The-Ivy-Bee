@@ -47,8 +47,8 @@ function productHero(imgFile, opts = {}) {
   <text x="540" y="${P + 320}" text-anchor="middle" font-family="${SERIF}" font-style="italic" font-size="36" fill="${C.gold}">Drawn from nature, made for your hair.</text>
   <rect x="350" y="${P + 366}" width="380" height="78" rx="39" fill="${C.gold}"/>
   <text x="540" y="${P + 417}" text-anchor="middle" font-family="${SANS}" font-weight="bold" font-size="28" letter-spacing="3" fill="${C.ink}">TREAT YOUR HAIR</text>
-  <text x="540" y="${P + 480}" text-anchor="middle" font-family="${SERIF}" font-style="italic" font-size="38" fill="${C.gold}">The Ivy Bee</text>
-  ${bee(540, P + 558, 0.62, C.gold)}
+  <text x="540" y="${P + 530}" text-anchor="middle" font-family="${SERIF}" font-style="italic" font-size="38" fill="${C.gold}">The Ivy Bee</text>
+  ${bee(540, P + 582, 0.62, C.gold)}
 </svg>`;
 }
 
