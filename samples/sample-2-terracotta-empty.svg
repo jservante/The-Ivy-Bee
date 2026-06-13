@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" width="1080" height="1350">
+  <defs>
+    <pattern id="ht" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="6" cy="6" r="5" fill="#e7b94e" opacity="0.30"/></pattern>
+  </defs>
+  <rect width="1080" height="1350" fill="#f4e7c6"/>
+  <rect x="26" y="26" width="1028" height="1298" fill="#c1462a"/>
+  <rect x="26" y="26" width="1028" height="1298" fill="url(#ht)"/>
+
+  <g stroke="#f4e7c6" stroke-width="10" stroke-linecap="round"><line x1="60" y1="140" x2="300" y2="140"/><line x1="60" y1="175" x2="272" y2="175"/><line x1="60" y1="210" x2="244" y2="210"/></g>
+  <!-- bee emblem (top-right) -->
+  <g transform="translate(952 130)" fill="none" stroke="#f4e7c6">
+    <circle r="40" stroke-width="3"/><circle r="33" stroke-width="1.4"/>
+    <g><ellipse cx="-10" cy="-5" rx="11" ry="6" stroke-width="1.4" transform="rotate(-26 -10 -5)"/><ellipse cx="10" cy="-5" rx="11" ry="6" stroke-width="1.4" transform="rotate(26 10 -5)"/><ellipse cx="0" cy="3" rx="6" ry="11" stroke-width="1.6"/><circle cx="0" cy="-9" r="3.2" stroke-width="1.4"/><line x1="-6" y1="1" x2="6" y2="1" stroke-width="1.1"/><line x1="-5" y1="7" x2="5" y2="7" stroke-width="1.1"/></g>
+  </g>
+
+  <text x="540" y="218" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="80" letter-spacing="4" fill="#f4e7c6">LOVE YOUR</text>
+  <text x="540" y="478" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="300" letter-spacing="-4" fill="#f4e7c6">HAIR</text>
+
+  <path transform="translate(245 600) scale(1.6)" d="M0 -20 L5 -5 L20 0 L5 5 L0 20 L-5 5 L-20 0 L-5 -5 Z" fill="#f4e7c6"/><path transform="translate(845 640) scale(2)" d="M0 -20 L5 -5 L20 0 L5 5 L0 20 L-5 5 L-20 0 L-5 -5 Z" fill="#e7b94e"/><path transform="translate(840 1040) scale(1.5)" d="M0 -20 L5 -5 L20 0 L5 5 L0 20 L-5 5 L-20 0 L-5 -5 Z" fill="#f4e7c6"/><path transform="translate(235 1050) scale(1.8)" d="M0 -20 L5 -5 L20 0 L5 5 L0 20 L-5 5 L-20 0 L-5 -5 Z" fill="#e7b94e"/>
+  
+    <circle cx="540" cy="842" r="320" fill="#f4e7c6" stroke="#22303a" stroke-width="7"/>
+    <circle cx="540" cy="842" r="298" fill="none" stroke="#e7b94e" stroke-width="4" stroke-dasharray="14 12"/>
+    <g transform="translate(540 772)" fill="none" stroke="#22303a" stroke-width="6" stroke-linejoin="round">
+      <rect x="-58" y="-44" width="116" height="84" rx="10"/><circle cx="0" cy="-2" r="22"/><circle cx="0" cy="-2" r="9" fill="#22303a"/><circle cx="38" cy="-30" r="5" fill="#22303a" stroke="none"/>
+    </g>
+    <text x="540" y="868" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="40" fill="#22303a">ADD YOUR PHOTO</text>
+    <text x="540" y="914" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="40" fill="#22303a">OR AI ARTWORK</text>
+    <text x="540" y="958" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" letter-spacing="2" fill="#22303a" opacity="0.7">1080 &#215; 1080, CENTRED</text>
+  
+    <g transform="rotate(-12 905 1120)">
+      <path d="M 905.0 1028.0 L 921.6 1058.2 L 951.0 1040.3 L 950.3 1074.7 L 984.7 1074.0 L 966.8 1103.4 L 997.0 1120.0 L 966.8 1136.6 L 984.7 1166.0 L 950.3 1165.3 L 951.0 1199.7 L 921.6 1181.8 L 905.0 1212.0 L 888.4 1181.8 L 859.0 1199.7 L 859.7 1165.3 L 825.3 1166.0 L 843.2 1136.6 L 813.0 1120.0 L 843.2 1103.4 L 825.3 1074.0 L 859.7 1074.7 L 859.0 1040.3 L 888.4 1058.2 Z" fill="#22303a" stroke="#22303a" stroke-width="4"/>
+      <text x="905" y="1132" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="34" fill="#f4e7c6">NEW</text>
+    </g>
+
+  <rect x="26" y="1208" width="1028" height="116" fill="#f4e7c6"/>
+  <g fill="#22303a"><path d="M70 1266 l 40 -22 l 0 44 Z"/><path d="M120 1266 l 40 -22 l 0 44 Z"/><path d="M170 1266 l 40 -22 l 0 44 Z"/></g>
+  <text x="240" y="1288" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="56" letter-spacing="2" fill="#22303a">BOTANICAL HAIRCARE</text>
+</svg>
